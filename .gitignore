@@ -1,0 +1,8 @@
+
+# Python generated files
+__pycache__/
+*.pyc
+.venv/
+
+# Windows metadata
+*Zone.Identifier
