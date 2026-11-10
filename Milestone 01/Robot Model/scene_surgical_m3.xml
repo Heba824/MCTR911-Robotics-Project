@@ -1,0 +1,134 @@
+<mujoco model="UR5e robotic scrub nurse | Milestone 03">
+  <include file="ur5e.xml" />
+  <visual>
+    <headlight ambient="0.26 0.26 0.28" diffuse="0.58 0.58 0.58" specular="0.08 0.08 0.08" />
+    <global azimuth="132" elevation="-25" />
+    <rgba haze="0.80 0.86 0.90 1" />
+  </visual>
+  <statistic center="0.28 0.05 0.16" extent="2.65" />
+  <asset>
+    <texture type="skybox" builtin="gradient" width="512" height="3072" rgb1="0.86 0.91 0.96" rgb2="0.64 0.73 0.82" />
+    <texture name="floor_tile" type="2d" builtin="checker" mark="edge" rgb1="0.81 0.85 0.86" rgb2="0.75 0.80 0.82" markrgb="0.88 0.91 0.92" width="512" height="512" />
+    <material name="operating_floor" texture="floor_tile" texrepeat="9 9" texuniform="true" reflectance="0.10" />
+    <material name="steel" rgba="0.72 0.78 0.81 1" specular="0.65" shininess="0.55" />
+    <material name="steel_light" rgba="0.85 0.89 0.91 1" specular="0.55" shininess="0.50" />
+    <material name="frame" rgba="0.16 0.24 0.30 1" specular="0.35" shininess="0.30" />
+    <material name="panel_white" rgba="0.89 0.94 0.95 1" specular="0.20" shininess="0.18" />
+    <material name="teal" rgba="0.10 0.52 0.55 1" specular="0.20" shininess="0.25" />
+    <material name="teal_soft" rgba="0.22 0.68 0.68 1" specular="0.20" shininess="0.25" />
+    <material name="surgical_blue" rgba="0.12 0.38 0.56 1" specular="0.18" shininess="0.20" />
+    <material name="drape" rgba="0.16 0.57 0.59 1" specular="0.05" shininess="0.10" />
+    <material name="dark_glass" rgba="0.045 0.105 0.145 1" specular="0.32" shininess="0.42" />
+    <material name="instrument" rgba="0.87 0.91 0.93 1" specular="0.85" shininess="0.68" />
+    <material name="instrument_handle" rgba="0.27 0.36 0.42 1" specular="0.45" shininess="0.35" />
+    <material name="lamp" rgba="0.96 0.98 0.96 1" emission="0.35" />
+    <material name="amber" rgba="0.97 0.67 0.20 1" emission="0.16" />
+  </asset>
+  <worldbody>
+    <light name="surgical_key_light" pos="0.3 -0.9 2.6" dir="-0.06 0.30 -1" directional="true" diffuse="0.95 0.96 1" />
+    <light name="worktop_fill_light" pos="-0.8 0.5 1.9" dir="0.45 -0.25 -1" directional="true" diffuse="0.35 0.43 0.46" />
+    <camera name="overview" pos="2.1500 -2.4500 1.5000" xyaxes="0.816706 0.577055 -0.000000 -0.227437 0.321892 0.919053" fovy="51" />
+    <camera name="instrument_tray" pos="1.3500 -1.2200 1.0800" xyaxes="0.861934 0.507020 -0.000000 -0.325332 0.553064 0.766994" fovy="40" />
+    <camera name="handover_closeup" pos="1.3700 1.3500 1.1500" xyaxes="-0.635201 0.772347 0.000000 -0.389830 -0.320608 0.863275" fovy="47" />
+    <geom name="room_floor" type="plane" pos="0 0 -0.65" size="0 0 0.05" material="operating_floor" contype="0" conaffinity="0" />
+    <geom name="rear_wall" type="box" pos="0.0 2.10 0.63" size="2.10 0.04 1.32" material="panel_white" contype="0" conaffinity="0" />
+    <geom name="side_wall" type="box" pos="-1.92 0.25 0.63" size="0.04 1.81 1.32" material="panel_white" contype="0" conaffinity="0" />
+    <geom name="rear_wall_trim" type="box" pos="0 2.049 -0.57" size="2.10 0.012 0.055" material="teal" contype="0" conaffinity="0" />
+    <geom name="side_wall_trim" type="box" pos="-1.868 0.25 -0.57" size="0.012 1.81 0.055" material="teal" contype="0" conaffinity="0" />
+    <body name="robot_station">
+      <geom name="robot_top" type="box" pos="0 0 -0.025" size="0.34 0.35 0.025" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="robot_top_edge" type="box" pos="0 0 -0.067" size="0.33 0.34 0.017" material="frame" contype="0" conaffinity="0" />
+      <geom name="robot_cabinet" type="box" pos="0 0 -0.352" size="0.285 0.30 0.265" material="panel_white" contype="0" conaffinity="0" />
+      <geom name="robot_cabinet_front" type="box" pos="0.286 0 -0.35" size="0.005 0.235 0.210" material="frame" contype="0" conaffinity="0" />
+      <geom name="robot_cabinet_led" type="sphere" pos="0.295 -0.215 -0.185" size="0.012" material="teal_soft" contype="0" conaffinity="0" />
+      <geom name="robot_cabinet_handle" type="capsule" fromto="0.298 -0.06 -0.27 0.298 0.06 -0.27" size="0.009" material="steel" contype="0" conaffinity="0" />
+      <geom name="pedestal_foot" type="box" pos="0 0 -0.627" size="0.315 0.325 0.022" material="frame" contype="0" conaffinity="0" />
+    </body>
+    <body name="tool_trolley" pos="0.75 -0.20 0.05">
+      <geom name="trolley_top" type="box" size="0.245 0.27 0.03" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="trolley_top_rim" type="box" pos="0 0 -0.040" size="0.245 0.27 0.009" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_shelf" type="box" pos="0 0 -0.44" size="0.217 0.235 0.016" material="steel" contype="0" conaffinity="0" />
+      <geom name="trolley_leg_fl" type="cylinder" pos="0.19 -0.22 -0.34" size="0.014 0.30" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_leg_fr" type="cylinder" pos="0.19 0.22 -0.34" size="0.014 0.30" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_leg_rl" type="cylinder" pos="-0.19 -0.22 -0.34" size="0.014 0.30" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_leg_rr" type="cylinder" pos="-0.19 0.22 -0.34" size="0.014 0.30" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_castor_fl" type="sphere" pos="0.19 -0.22 -0.668" size="0.032" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_castor_fr" type="sphere" pos="0.19 0.22 -0.668" size="0.032" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_castor_rl" type="sphere" pos="-0.19 -0.22 -0.668" size="0.032" material="frame" contype="0" conaffinity="0" />
+      <geom name="trolley_castor_rr" type="sphere" pos="-0.19 0.22 -0.668" size="0.032" material="frame" contype="0" conaffinity="0" />
+    </body>
+    <body name="sterile_tray" pos="0.75 -0.20 0.08">
+      <geom name="tray_base" type="box" pos="0 0 0.006" size="0.163 0.195 0.006" material="steel" contype="0" conaffinity="0" />
+      <geom name="tray_wall_left" type="box" pos="-0.163 0 0.023" size="0.004 0.198 0.017" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="tray_wall_right" type="box" pos="0.163 0 0.023" size="0.004 0.198 0.017" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="tray_wall_near" type="box" pos="0 -0.195 0.023" size="0.163 0.004 0.017" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="tray_wall_far" type="box" pos="0 0.195 0.023" size="0.163 0.004 0.017" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="tray_scalpel_pad" type="box" pos="0 0.073 0.014" size="0.128 0.043 0.002" material="dark_glass" contype="0" conaffinity="0" />
+      <geom name="tray_forceps_pad" type="box" pos="0 -0.088 0.014" size="0.128 0.043 0.002" material="dark_glass" contype="0" conaffinity="0" />
+    </body>
+    <body name="scalpel" pos="0.75 -0.13 0.101">
+      <geom name="scalpel_grip" type="capsule" size="0.008 0.047" euler="0 1.57079632679 0" material="instrument_handle" contype="0" conaffinity="0" />
+      <geom name="scalpel_neck" type="box" pos="0.059 0 0" size="0.016 0.006 0.003" material="steel" contype="0" conaffinity="0" />
+      <geom name="scalpel_blade" type="box" pos="0.085 0 0" size="0.029 0.009 0.002" material="instrument" contype="0" conaffinity="0" />
+      <site name="scalpel_pickup_site" type="sphere" pos="0 0 0.035" size="0.010" rgba="1 0.69 0.20 0.85" />
+    </body>
+    <body name="forceps" pos="0.75 -0.29 0.101">
+      <geom name="forceps_upper" type="capsule" fromto="-0.070 0.007 0 0.072 0.017 0" size="0.0045" material="instrument" contype="0" conaffinity="0" />
+      <geom name="forceps_lower" type="capsule" fromto="-0.070 -0.007 0 0.072 -0.017 0" size="0.0045" material="instrument" contype="0" conaffinity="0" />
+      <geom name="forceps_hinge" type="sphere" pos="-0.026 0 0" size="0.007" material="frame" contype="0" conaffinity="0" />
+      <site name="forceps_pickup_site" type="sphere" pos="0 0 0.035" size="0.010" rgba="1 0.69 0.20 0.85" />
+    </body>
+    <body name="surgeon_handover_target" pos="0.30 0.43 0.38">
+      <geom name="handover_glove_palm" type="ellipsoid" pos="0 0.086 0" size="0.037 0.054 0.020" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="handover_glove_thumb" type="capsule" fromto="0.025 0.063 0 0.066 0.030 0" size="0.012" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="handover_glove_wrist" type="capsule" fromto="0 0.120 0 0 0.218 0" size="0.027" material="surgical_blue" contype="0" conaffinity="0" />
+      <site name="handover_target_site" type="sphere" size="0.028" rgba="0.08 0.87 0.86 0.58" />
+      <site name="handover_orientation_axis" type="box" pos="0 0 0.052" size="0.045 0.005 0.005" rgba="0.07 0.72 0.79 0.65" />
+    </body>
+    <body name="operating_table" pos="0.26 1.22 -0.23">
+      <geom name="operating_bed" type="box" size="0.30 0.53 0.057" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="sterile_drape" type="box" pos="0 0 0.064" size="0.287 0.51 0.012" material="drape" contype="0" conaffinity="0" />
+      <geom name="operating_bed_base" type="box" pos="0 0 -0.34" size="0.13 0.21 0.035" material="frame" contype="0" conaffinity="0" />
+      <geom name="operating_bed_column" type="box" pos="0 0 -0.19" size="0.075 0.10 0.14" material="steel" contype="0" conaffinity="0" />
+      <geom name="operating_bed_foot" type="box" pos="0 0 -0.397" size="0.20 0.28 0.02" material="frame" contype="0" conaffinity="0" />
+    </body>
+    <body name="scrub_surgeon" pos="0.85 1.25 0.06">
+      <geom name="surgeon_legs_left" type="capsule" fromto="-0.10 0 -0.16 -0.10 0 -0.655" size="0.055" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="surgeon_legs_right" type="capsule" fromto="0.10 0 -0.16 0.10 0 -0.655" size="0.055" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="surgeon_torso" type="box" pos="0 0 0.16" size="0.19 0.115 0.26" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="surgeon_head" type="sphere" pos="0 0 0.57" size="0.11" rgba="0.84 0.70 0.59 1" contype="0" conaffinity="0" />
+      <geom name="surgeon_cap" type="ellipsoid" pos="0 0 0.65" size="0.11 0.11 0.049" material="teal" contype="0" conaffinity="0" />
+      <geom name="surgeon_mask" type="box" pos="0 -0.100 0.545" size="0.072 0.008 0.038" material="panel_white" contype="0" conaffinity="0" />
+      <geom name="surgeon_arm_left" type="capsule" fromto="0.18 -0.02 0.33 0.23 -0.32 0.15" size="0.048" material="surgical_blue" contype="0" conaffinity="0" />
+      <geom name="surgeon_arm_right" type="capsule" fromto="-0.18 -0.02 0.33 -0.54 -0.60 0.32" size="0.047" material="surgical_blue" contype="0" conaffinity="0" />
+    </body>
+    <body name="surgical_lamp" pos="-0.92 1.20 0">
+      <geom name="lamp_vertical_stand" type="cylinder" pos="0 0 0.24" size="0.028 0.87" material="frame" contype="0" conaffinity="0" />
+      <geom name="lamp_base" type="cylinder" pos="0 0 -0.615" size="0.23 0.032" material="frame" contype="0" conaffinity="0" />
+      <geom name="lamp_arm" type="capsule" fromto="0 0 1.10 0.54 -0.25 1.10" size="0.023" material="steel" contype="0" conaffinity="0" />
+      <geom name="lamp_head_rim" type="cylinder" pos="0.54 -0.25 1.06" size="0.205 0.045" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="lamp_head_lens" type="cylinder" pos="0.54 -0.25 1.006" size="0.17 0.008" material="lamp" contype="0" conaffinity="0" />
+      <geom name="lamp_center_grip" type="capsule" fromto="0.54 -0.25 0.97 0.54 -0.25 0.89" size="0.012" material="frame" contype="0" conaffinity="0" />
+    </body>
+    <body name="patient_monitor" pos="-1.18 0.71 0.24">
+      <geom name="monitor_column" type="cylinder" pos="0 0 -0.38" size="0.025 0.42" material="steel" contype="0" conaffinity="0" />
+      <geom name="monitor_base" type="cylinder" pos="0 0 -0.86" size="0.14 0.022" material="frame" contype="0" conaffinity="0" />
+      <geom name="monitor_case" type="box" size="0.225 0.045 0.155" material="panel_white" contype="0" conaffinity="0" />
+      <geom name="monitor_display" type="box" pos="0 -0.051 0" size="0.204 0.005 0.130" material="dark_glass" contype="0" conaffinity="0" />
+      <geom name="monitor_trace_1" type="box" pos="-0.040 -0.057 0.050" size="0.12 0.001 0.003" material="teal_soft" contype="0" conaffinity="0" />
+      <geom name="monitor_trace_2" type="box" pos="0.065 -0.057 -0.005" size="0.060 0.001 0.003" material="amber" contype="0" conaffinity="0" />
+      <geom name="monitor_trace_3" type="box" pos="-0.070 -0.057 -0.055" size="0.085 0.001 0.003" material="teal_soft" contype="0" conaffinity="0" />
+      <geom name="monitor_indicator" type="sphere" pos="0.18 -0.058 0.113" size="0.007" material="teal_soft" contype="0" conaffinity="0" />
+    </body>
+    <body name="supply_cabinet" pos="-1.52 1.57 -0.08">
+      <geom name="cabinet_body" type="box" size="0.25 0.28 0.54" material="panel_white" contype="0" conaffinity="0" />
+      <geom name="cabinet_top" type="box" pos="0 0 0.548" size="0.26 0.29 0.018" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="cabinet_door" type="box" pos="0 -0.283 0" size="0.228 0.005 0.490" material="steel_light" contype="0" conaffinity="0" />
+      <geom name="cabinet_handle" type="capsule" fromto="0.16 -0.30 0.03 0.16 -0.30 0.21" size="0.010" material="frame" contype="0" conaffinity="0" />
+    </body>
+    <body name="clinical_disposal" pos="1.42 -0.15 -0.40">
+      <geom name="waste_bin" type="cylinder" size="0.145 0.23" material="frame" contype="0" conaffinity="0" />
+      <geom name="waste_bin_lid" type="cylinder" pos="0 0 0.240" size="0.157 0.015" material="amber" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>
