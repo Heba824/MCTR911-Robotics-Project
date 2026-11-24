@@ -1,0 +1,135 @@
+{
+  "run_id": "20261124_160807_265128",
+  "started_at_utc": "2026-11-24T16:08:07.968460+00:00",
+  "finished_at_utc": "2026-11-24T16:08:33.575543+00:00",
+  "status": "COMPLETED",
+  "reason": "All nine waypoints completed; instrument released and held at handover; robot returned HOME.",
+  "instrument": "forceps",
+  "control_strategy": "inverse_dynamics",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "plan_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Planning/surgical_handover_plan_forceps_20261124_134622_317512.json",
+  "collision_preflight_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_forceps_20261124_114651.json",
+  "collision_preflight_status": "WARNING_REVIEW_REQUIRED",
+  "warning_review_approved": true,
+  "minimum_clearances_m": {
+    "robot_environment": 0.02227415732775274,
+    "robot_self": 0.0450260011213282,
+    "carried_instrument_environment": 0.02050407469216948
+  },
+  "sample_count": 2404,
+  "configured_control_rate_hz": 100.0,
+  "maximum_feedback_age_observed_s": 0.06789457199920435,
+  "maximum_joint_tracking_error_observed_rad": 0.03689752095962673,
+  "online_measured_state_minimum_clearances_m": {
+    "robot_environment": 0.022672534682647762,
+    "robot_self": 0.04502600251213871,
+    "carried_instrument_environment": 0.021238154578473493
+  },
+  "last_collision_sample": {
+    "phase": "return_home_settle",
+    "q_rad": [
+      -1.571597827602908,
+      -1.5707739679760593,
+      1.5706997759629386,
+      -1.5707338327716929,
+      -1.5707991674708623,
+      -0.0008149857433241174
+    ],
+    "qdot_rad_s": [
+      0.004060981287325034,
+      -0.00014978246345163443,
+      0.0005068924352978466,
+      -0.00033275304232705254,
+      -2.7005759966364053e-06,
+      0.004116300842756079
+    ],
+    "instrument_body_position_world_m": [
+      0.3000927877556496,
+      0.4301140332783973,
+      0.38064779000298193
+    ],
+    "instrument_body_quaternion_world_wxyz": [
+      0.9999999990559885,
+      -4.296908009357589e-05,
+      -6.3634726331251045e-06,
+      1.0897016650829782e-06
+    ]
+  },
+  "site_from_instrument_actual": [
+    [
+      0.9999999979707785,
+      -6.207289041842486e-06,
+      -6.340277878713865e-05,
+      -2.4329465482364476e-05
+    ],
+    [
+      -6.210050093634783e-06,
+      -0.9999999990325166,
+      -4.354770010081675e-05,
+      -1.6099192996776868e-05
+    ],
+    [
+      -6.340250841263587e-05,
+      4.354809374688118e-05,
+      -0.9999999970418428,
+      0.035506005851366304
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "instrument_attached_at_end": false,
+  "instrument_released": true,
+  "units": {
+    "joint_position": "rad",
+    "joint_velocity": "rad/s",
+    "feedforward_torque": "N*m"
+  },
+  "overall": {
+    "rmse_rad": 0.009113990129761643,
+    "mae_rad": 0.005462990515284165,
+    "max_abs_error_rad": 0.03689752095962673
+  },
+  "per_joint": {
+    "shoulder_pan_joint": {
+      "rmse_rad": 0.011844195792698268,
+      "mae_rad": 0.008099493164783757,
+      "max_abs_error_rad": 0.03660584716880799,
+      "final_error_rad": 0.000797827602907919
+    },
+    "shoulder_lift_joint": {
+      "rmse_rad": 0.007948641681333852,
+      "mae_rad": 0.004655663785091209,
+      "max_abs_error_rad": 0.03689752095962673,
+      "final_error_rad": -2.603202394069193e-05
+    },
+    "elbow_joint": {
+      "rmse_rad": 0.006207642587595312,
+      "mae_rad": 0.004139741922261544,
+      "max_abs_error_rad": 0.023330306953886604,
+      "final_error_rad": 0.00010022403706133609
+    },
+    "wrist_1_joint": {
+      "rmse_rad": 0.01077883886128927,
+      "mae_rad": 0.007783343834685337,
+      "max_abs_error_rad": 0.0334005722325208,
+      "final_error_rad": -6.616722830710131e-05
+    },
+    "wrist_2_joint": {
+      "rmse_rad": 7.61281831280158e-07,
+      "mae_rad": 5.60666891251756e-07,
+      "max_abs_error_rad": 2.7536295530428134e-06,
+      "final_error_rad": -8.32529137628768e-07
+    },
+    "wrist_3_joint": {
+      "rmse_rad": 0.011840811783227953,
+      "mae_rad": 0.008099139717991892,
+      "max_abs_error_rad": 0.03657907809794375,
+      "final_error_rad": 0.0008149857433241174
+    }
+  },
+  "csv_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Execution/surgical_handover_execution_forceps_20261124_160807_265128.csv"
+}

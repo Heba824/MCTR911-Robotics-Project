@@ -1,0 +1,167 @@
+{
+  "status": "FAIL_CLEARANCE",
+  "preflight_passed": false,
+  "instrument": "scalpel",
+  "plan_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Planning/surgical_handover_plan_scalpel_20261124_032955_257327.json",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "mujoco_version": "3.2.7",
+  "collision_distance_backend": {
+    "name": "MuJoCo native CCD",
+    "native_ccd_enabled": true,
+    "enable_flag": "mjtEnableBit.mjENBL_NATIVECCD"
+  },
+  "model_dimensions": {
+    "nq": 6,
+    "nv": 6,
+    "nu": 6
+  },
+  "home_start_error_max_rad": 0.008079391421790705,
+  "trajectory": {
+    "sample_count": 4578,
+    "sample_period_s": 0.005,
+    "duration_s": 22.868322588866953,
+    "pickup_attachment_time_s": 10.538672687837312,
+    "handover_release_time_s": 18.267432453780582,
+    "segments": [
+      "approach_clearance",
+      "pregrasp",
+      "pickup",
+      "lift",
+      "transfer_clearance",
+      "handover_approach",
+      "handover",
+      "retreat",
+      "return_home"
+    ],
+    "interpolation": "project QuinticJointTrajectory point-to-point segments"
+  },
+  "geometry_counts": {
+    "robot_collision_geoms": 9,
+    "static_scene_geoms_excluding_selected_instrument": 62,
+    "selected_instrument_geoms": 3,
+    "robot_self_pairs_checked": 21,
+    "robot_environment_pairs_per_sample_before_pickup_and_after_release": 585,
+    "robot_environment_pairs_per_sample_while_attached": 558,
+    "carried_instrument_environment_pairs_per_sample": 186
+  },
+  "clearance_thresholds": {
+    "distance_cap_m": 0.05,
+    "minimum_clearance_m": 0.02,
+    "warning_clearance_m": 0.05
+  },
+  "minimum_clearances": {
+    "robot_environment": {
+      "minimum_distance_m": 0.021573574096297555,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.021573574096297555,
+      "time_s": 18.267432453780582,
+      "closest_pair": {
+        "geom_a": "geom_33",
+        "geom_b": "handover_glove_palm"
+      }
+    },
+    "robot_self": {
+      "minimum_distance_m": 0.04493339909070567,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.04493339909070567,
+      "time_s": 14.388760190484952,
+      "closest_pair": {
+        "geom_a": "geom_26",
+        "geom_b": "geom_33"
+      }
+    },
+    "carried_instrument_environment": {
+      "minimum_distance_m": 0.012999999999769883,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.012999999999769883,
+      "time_s": 10.538672687837312,
+      "closest_pair": {
+        "geom_a": "scalpel_grip",
+        "geom_b": "trolley_top"
+      }
+    }
+  },
+  "collision_event_count": 0,
+  "collision_events": [],
+  "joint_limit_violation_count": 0,
+  "joint_limit_violations": [],
+  "closest_pairs_below_warning": [
+    {
+      "category": "carried_instrument_environment",
+      "geom_a": "scalpel_grip",
+      "geom_b": "trolley_top",
+      "minimum_distance_m": 0.012999999999769883,
+      "time_s": 10.538672687837312,
+      "phase": "pickup"
+    },
+    {
+      "category": "carried_instrument_environment",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "minimum_distance_m": 0.020468084069526833,
+      "time_s": 10.958672687837312,
+      "phase": "lift"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "minimum_distance_m": 0.021573574096297555,
+      "time_s": 18.267432453780582,
+      "phase": "handover"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "scalpel_grip",
+      "minimum_distance_m": 0.026993380662955542,
+      "time_s": 10.533877610040598,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "tray_scalpel_pad",
+      "minimum_distance_m": 0.03924930992802546,
+      "time_s": 10.538672687837312,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_self",
+      "geom_a": "geom_26",
+      "geom_b": "geom_33",
+      "minimum_distance_m": 0.04493339909070567,
+      "time_s": 14.388760190484952,
+      "phase": "transfer_clearance"
+    }
+  ],
+  "pickup_support_contact": {
+    "support_geometries": [
+      "tray_base",
+      "tray_scalpel_pad"
+    ],
+    "allowed_only_during_pickup_and_lift": true,
+    "required_clearance_to_end_allowance_m": 0.02,
+    "cleared": true,
+    "clear_time_s": 10.958672687837312,
+    "allowed_sample_count": 84,
+    "clearance_violation": false
+  },
+  "intentional_contact_policy": {
+    "robot_instrument_pair": "excluded while instrument is attached because this is the modeled rigid grasp",
+    "instrument_tray_support_pair": "tray_base and selected instrument pad are excluded only during pickup/lift until the instrument clears them by the configured minimum clearance; other tray geometry remains checked",
+    "instrument_receiver_pair": "excluded during handover, retreat and return_home; the simulated hand is the intended receiver",
+    "robot_receiver_pair": "never excluded; UR5e collision proxies remain checked against surgeon hand geometries"
+  },
+  "limitations": [
+    "Sampled kinematic geometry sweep; not continuous collision detection.",
+    "Does not simulate actuator lag, tracking error, forces, friction, or physical gripper contact.",
+    "UR5e uses simplified collision proxies in MuJoCo geom group 3, not visual meshes.",
+    "Same-link and direct parent-child self-collision pairs are excluded because their proxies overlap by design.",
+    "The instrument is carried with a mocap rigid-transform approximation matching the bridge; the robot-instrument attachment pair is treated as intentional contact.",
+    "Instrument contact with the surgeon receiver body is excluded during handover and after release; robot-to-receiver clearance remains checked.",
+    "The result is a simulation preflight, not a safety certification or authorization for real hardware."
+  ],
+  "csv_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_scalpel_20261124_024314.csv",
+  "json_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_scalpel_20261124_024314.json"
+}

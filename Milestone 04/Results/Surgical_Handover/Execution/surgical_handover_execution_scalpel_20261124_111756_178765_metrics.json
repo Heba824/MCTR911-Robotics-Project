@@ -1,0 +1,36 @@
+{
+  "run_id": "20261124_111756_178765",
+  "started_at_utc": null,
+  "finished_at_utc": "2026-11-24T11:17:57.477803+00:00",
+  "status": "ABORTED",
+  "reason": "The instrument pickup site has moved since planning: position error=0.0000 m, orientation error=178.93 deg; replan",
+  "instrument": "scalpel",
+  "control_strategy": "inverse_dynamics",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "plan_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Planning/surgical_handover_plan_scalpel_20261124_032955_257327.json",
+  "collision_preflight_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_scalpel_20261124_034050.json",
+  "collision_preflight_status": "WARNING_REVIEW_REQUIRED",
+  "warning_review_approved": true,
+  "minimum_clearances_m": {
+    "robot_environment": 0.021573574096297555,
+    "robot_self": 0.04493339909070567,
+    "carried_instrument_environment": 0.020468084069526833
+  },
+  "sample_count": 0,
+  "configured_control_rate_hz": 100.0,
+  "maximum_feedback_age_observed_s": 0.0023276269930647686,
+  "maximum_joint_tracking_error_observed_rad": 0.0,
+  "online_measured_state_minimum_clearances_m": {
+    "robot_environment": 0.05,
+    "robot_self": 0.05,
+    "carried_instrument_environment": 0.05
+  },
+  "instrument_attached_at_end": false,
+  "instrument_released": false,
+  "units": {
+    "joint_position": "rad",
+    "joint_velocity": "rad/s",
+    "feedforward_torque": "N*m"
+  },
+  "csv_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Execution/surgical_handover_execution_scalpel_20261124_111756_178765.csv"
+}

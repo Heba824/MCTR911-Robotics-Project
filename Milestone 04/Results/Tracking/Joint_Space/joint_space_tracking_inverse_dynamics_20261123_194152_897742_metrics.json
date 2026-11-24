@@ -1,0 +1,65 @@
+{
+  "run_id": "20261123_194152_897742",
+  "started_at_utc": "2026-11-23T17:41:52.897772+00:00",
+  "status": "COMPLETED",
+  "reason": "Reference duration reached; final goal position is held.",
+  "control_strategy": "inverse_dynamics",
+  "reference_csv": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Joint_Space/joint_space_reference.csv",
+  "sample_count": 802,
+  "trajectory_duration_s": 8.0,
+  "configured_control_rate_hz": 100.0,
+  "observed_controller_rate_hz": 100.10652390197221,
+  "feedback_timeout_s": 0.1,
+  "maximum_feedback_age_observed_s": 0.013014420001127291,
+  "maximum_initial_joint_error_rad": 0.008079391421790705,
+  "command_saturation_count": 0,
+  "overall": {
+    "rmse_rad": 0.0008952389959266853,
+    "mae_rad": 0.000537465276722159,
+    "max_abs_error_rad": 0.008079391416540904
+  },
+  "per_joint": {
+    "shoulder_pan_joint": {
+      "rmse_rad": 0.0010563733716151603,
+      "mae_rad": 0.0007654142238737486,
+      "max_abs_error_rad": 0.0027496237048700856,
+      "final_error_rad": -3.6296039507277555e-09
+    },
+    "shoulder_lift_joint": {
+      "rmse_rad": 0.0011716727283799617,
+      "mae_rad": 0.0006294235063152245,
+      "max_abs_error_rad": 0.008079391416540904,
+      "final_error_rad": 2.145221333904601e-09
+    },
+    "elbow_joint": {
+      "rmse_rad": 0.001185357723023071,
+      "mae_rad": 0.0006913987989809888,
+      "max_abs_error_rad": 0.007926222947134187,
+      "final_error_rad": -2.7113826739366687e-09
+    },
+    "wrist_1_joint": {
+      "rmse_rad": 0.0005435607440357991,
+      "mae_rad": 0.0003736779935582557,
+      "max_abs_error_rad": 0.0027564491824183524,
+      "final_error_rad": 1.7138894747859013e-09
+    },
+    "wrist_2_joint": {
+      "rmse_rad": 0.0003519352374580493,
+      "mae_rad": 0.00025492354246681365,
+      "max_abs_error_rad": 0.000915189644181913,
+      "final_error_rad": -1.400697557940589e-09
+    },
+    "wrist_3_joint": {
+      "rmse_rad": 0.0007039785869812727,
+      "mae_rad": 0.0005099535951379222,
+      "max_abs_error_rad": 0.001830297956859045,
+      "final_error_rad": -2.855663344680792e-09
+    }
+  },
+  "tracking_error_sign_convention": "desired_position - actual_position",
+  "units": {
+    "position": "rad",
+    "velocity": "rad/s",
+    "feedforward_torque": "N*m"
+  }
+}

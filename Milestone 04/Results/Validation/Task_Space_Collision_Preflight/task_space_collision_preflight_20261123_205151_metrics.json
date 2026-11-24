@@ -1,0 +1,1234 @@
+{
+  "status": "PASS",
+  "status_meaning": "PASS means no sampled geometry pair was at or below the requested clearance threshold and no sampled joint position violated its MuJoCo joint limits. It is not a certified safety result.",
+  "generated_at_utc": "2026-11-23T20:52:00.103231+00:00",
+  "mujoco_version": "3.2.0",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_m3.xml",
+  "reference_csv": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Task_Space/task_space_joint_reference.csv",
+  "home_keyframe_used": "home",
+  "trajectory": {
+    "reference_row_count": 401,
+    "sampled_configuration_count": 555,
+    "start_time_s": 0.0,
+    "end_time_s": 8.0,
+    "duration_s": 8.0,
+    "sampling_method": "piecewise-linear interpolation of CSV joint positions",
+    "maximum_joint_step_requested_rad": 0.001,
+    "maximum_joint_step_observed_rad": 0.0009948629148919252
+  },
+  "geometry_counts": {
+    "model_total_geometries": 101,
+    "robot_collision_geometries": 9,
+    "environment_geometries": 72,
+    "robot_environment_pairs_per_configuration": 648,
+    "robot_self_pairs_checked_per_configuration": 21,
+    "robot_self_pairs_excluded": 15
+  },
+  "scene_collision_masks": {
+    "environment_geoms_with_contype_zero": 72,
+    "environment_geoms_with_conaffinity_zero": 72
+  },
+  "clearance_requirement": {
+    "minimum_clearance_m": 0.0,
+    "distance_tolerance_m": 1e-09,
+    "penetration_tolerance_m": 1e-06
+  },
+  "minimum_clearances": {
+    "robot_environment_m": 0.002999999999999975,
+    "robot_self_m": 0.027379426806675156,
+    "overall_m": 0.002999999999999975
+  },
+  "events": {
+    "clearance_violation_pair_sample_events": 0,
+    "unique_geometry_pairs_violating_clearance": 0,
+    "penetrating_pair_sample_events": 0,
+    "joint_limit_violation_events": 0
+  },
+  "first_clearance_violation": null,
+  "first_joint_limit_violation": null,
+  "joint_limits": [
+    {
+      "joint_name": "shoulder_pan_joint",
+      "joint_id": 0,
+      "limited": true,
+      "lower_rad": -6.28319,
+      "upper_rad": 6.28319
+    },
+    {
+      "joint_name": "shoulder_lift_joint",
+      "joint_id": 1,
+      "limited": true,
+      "lower_rad": -6.28319,
+      "upper_rad": 6.28319
+    },
+    {
+      "joint_name": "elbow_joint",
+      "joint_id": 2,
+      "limited": true,
+      "lower_rad": -3.1415,
+      "upper_rad": 3.1415
+    },
+    {
+      "joint_name": "wrist_1_joint",
+      "joint_id": 3,
+      "limited": true,
+      "lower_rad": -6.28319,
+      "upper_rad": 6.28319
+    },
+    {
+      "joint_name": "wrist_2_joint",
+      "joint_id": 4,
+      "limited": true,
+      "lower_rad": -6.28319,
+      "upper_rad": 6.28319
+    },
+    {
+      "joint_name": "wrist_3_joint",
+      "joint_id": 5,
+      "limited": true,
+      "lower_rad": -6.28319,
+      "upper_rad": 6.28319
+    }
+  ],
+  "closest_robot_environment_pairs": [
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 34,
+        "geom_name": "robot_top",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top[34]"
+      },
+      "minimum_distance_m": 0.002999999999999975,
+      "time_s": 0.3,
+      "phase": "accelerating",
+      "sample_index": 15,
+      "closest_points_world_m": [
+        0.0,
+        0.0,
+        0.0029999999999999714,
+        0.0,
+        0.0,
+        -3.469446951953614e-18
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 35,
+        "geom_name": "robot_top_edge",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top_edge[35]"
+      },
+      "minimum_distance_m": 0.053000000000000005,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        0.0,
+        0.0,
+        0.0030000000000000027,
+        0.0,
+        0.0,
+        -0.05
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 36,
+        "geom_name": "robot_cabinet",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_cabinet[36]"
+      },
+      "minimum_distance_m": 0.08999999999999997,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        0.0,
+        0.0,
+        0.0030000000000000027,
+        0.0,
+        0.0,
+        -0.08699999999999997
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 34,
+        "geom_name": "robot_top",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top[34]"
+      },
+      "minimum_distance_m": 0.10299999999999998,
+      "time_s": 3.48,
+      "phase": "decelerating",
+      "sample_index": 282,
+      "closest_points_world_m": [
+        -0.1546742925380734,
+        0.03224691036124996,
+        0.10299999999999998,
+        -0.1546742925380734,
+        0.03224691036124996,
+        -6.938893903907228e-18
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 34,
+        "geom_name": "robot_top",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top[34]"
+      },
+      "minimum_distance_m": 0.113,
+      "time_s": 0.3,
+      "phase": "accelerating",
+      "sample_index": 15,
+      "closest_points_world_m": [
+        -0.13799998866983285,
+        5.592071183942438e-05,
+        0.113,
+        -0.13799998866983285,
+        5.592071183942438e-05,
+        0.0
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 35,
+        "geom_name": "robot_top_edge",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top_edge[35]"
+      },
+      "minimum_distance_m": 0.15299999999999997,
+      "time_s": 3.48,
+      "phase": "decelerating",
+      "sample_index": 282,
+      "closest_points_world_m": [
+        -0.1546742925380734,
+        0.03224691036124996,
+        0.10299999999999998,
+        -0.1546742925380734,
+        0.03224691036124996,
+        -0.04999999999999999
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 35,
+        "geom_name": "robot_top_edge",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_top_edge[35]"
+      },
+      "minimum_distance_m": 0.16299999999999998,
+      "time_s": 0.3,
+      "phase": "accelerating",
+      "sample_index": 15,
+      "closest_points_world_m": [
+        -0.13799998866983285,
+        5.592071183942438e-05,
+        0.11299999999999999,
+        -0.13799998866983285,
+        5.592071183942438e-05,
+        -0.04999999999999999
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "geom_b": {
+        "geom_id": 65,
+        "geom_name": "handover_glove_palm",
+        "body_id": 13,
+        "body_name": "surgeon_handover_target",
+        "label": "surgeon_handover_target/handover_glove_palm[65]"
+      },
+      "minimum_distance_m": 0.17508016143116834,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.1339834938597443,
+        0.36850513974064475,
+        0.5508941351901667,
+        0.2386642180140068,
+        0.40591884967326125,
+        0.4156342992210913
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "geom_b": {
+        "geom_id": 80,
+        "geom_name": "surgeon_arm_right",
+        "body_id": 15,
+        "body_name": "scrub_surgeon",
+        "label": "scrub_surgeon/surgeon_arm_right[80]"
+      },
+      "minimum_distance_m": 0.18921895177356873,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.19892623731196177,
+        0.7915498689693747,
+        0.4964445125960374,
+        0.33247700009617864,
+        0.710497042051581,
+        0.38968101359625684
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 36,
+        "geom_name": "robot_cabinet",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_cabinet[36]"
+      },
+      "minimum_distance_m": 0.19,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.15799999999893408,
+        5.803664063288583e-07,
+        0.10300000000000001,
+        -0.15799999999893408,
+        5.803664063288583e-07,
+        -0.087
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "geom_b": {
+        "geom_id": 65,
+        "geom_name": "handover_glove_palm",
+        "body_id": 13,
+        "body_name": "surgeon_handover_target",
+        "label": "surgeon_handover_target/handover_glove_palm[65]"
+      },
+      "minimum_distance_m": 0.19480713467513056,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.1421255038636197,
+        0.4589975998131669,
+        0.5651441329846847,
+        0.23944399396773106,
+        0.5128492461171369,
+        0.4052099859286462
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 36,
+        "geom_name": "robot_cabinet",
+        "body_id": 8,
+        "body_name": "robot_station",
+        "label": "robot_station/robot_cabinet[36]"
+      },
+      "minimum_distance_m": 0.1999999999999999,
+      "time_s": 0.2,
+      "phase": "accelerating",
+      "sample_index": 10,
+      "closest_points_world_m": [
+        -0.13799999890863293,
+        1.7355613337162182e-05,
+        0.11299999999999996,
+        -0.13799999890863293,
+        1.7355613337162182e-05,
+        -0.08699999999999994
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "geom_b": {
+        "geom_id": 65,
+        "geom_name": "handover_glove_palm",
+        "body_id": 13,
+        "body_name": "surgeon_handover_target",
+        "label": "surgeon_handover_target/handover_glove_palm[65]"
+      },
+      "minimum_distance_m": 0.20872676085424757,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.08170797643153759,
+        0.5526652520097098,
+        0.49265432752634974,
+        0.26080529369107597,
+        0.5271557486391979,
+        0.38853767715316323
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "geom_b": {
+        "geom_id": 67,
+        "geom_name": "handover_glove_wrist",
+        "body_id": 13,
+        "body_name": "surgeon_handover_target",
+        "label": "surgeon_handover_target/handover_glove_wrist[67]"
+      },
+      "minimum_distance_m": 0.20906699281644592,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.07669407222260773,
+        0.5813343452610665,
+        0.48512826669241205,
+        0.2658477215464281,
+        0.5813343452610665,
+        0.3960782558401216
+      ]
+    },
+    {
+      "kind": "robot_environment",
+      "geom_a": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "geom_b": {
+        "geom_id": 67,
+        "geom_name": "handover_glove_wrist",
+        "body_id": 13,
+        "body_name": "surgeon_handover_target",
+        "label": "surgeon_handover_target/handover_glove_wrist[67]"
+      },
+      "minimum_distance_m": 0.21666983074178586,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.16964365781739316,
+        0.4514366310312744,
+        0.5607414528104623,
+        0.2855557775526996,
+        0.5390786194004639,
+        0.4000271786253825
+      ]
+    }
+  ],
+  "closest_robot_self_pairs": [
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "minimum_distance_m": 0.027379426806675156,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.058988274119834996,
+        0.5005160853667531,
+        0.5553719155762936,
+        0.06478379782601824,
+        0.5192519441404188,
+        0.5362666149179317
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "geom_b": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "minimum_distance_m": 0.049000000000000134,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.044998567455440376,
+        0.38999860417943766,
+        0.5879999977989941,
+        -0.09399856745510987,
+        0.38999878416649814,
+        0.5879999949645524
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "minimum_distance_m": 0.07099825582938024,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.08436016825551976,
+        0.4023315995756411,
+        0.5654792344489855,
+        0.030722462813085168,
+        0.41982560185909296,
+        0.5223780886429709
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "geom_b": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "minimum_distance_m": 0.08436772850919785,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        0.10737133713563875,
+        0.47035798288840674,
+        0.5850515293042609,
+        0.0603567763659348,
+        0.5394089989471519,
+        0.5732404383009515
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "geom_b": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "minimum_distance_m": 0.2770000000001421,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.13399979797854963,
+        0.054998931096942816,
+        0.5879999891355047,
+        -0.13399878050073596,
+        0.33199893109521084,
+        0.5879999344323964
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "minimum_distance_m": 0.2828604672062804,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.13746342308308906,
+        0.049883636041483215,
+        0.5663524506771824,
+        -0.13442789510963338,
+        0.33209125235796405,
+        0.5853179659891257
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "minimum_distance_m": 0.29089900221614595,
+      "time_s": 0.12,
+      "phase": "accelerating",
+      "sample_index": 6,
+      "closest_points_world_m": [
+        -0.003991140624329936,
+        2.930122272457701e-07,
+        0.2428671094711526,
+        -0.02334145437969501,
+        1.7136283029611884e-06,
+        0.533121816316537
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "minimum_distance_m": 0.30295028693866594,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.13660014864137152,
+        0.04987810385226668,
+        0.5661810639678353,
+        -0.12811844119895252,
+        0.35209565239663165,
+        0.5854551488207054
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "minimum_distance_m": 0.30718387033280475,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.001036560996550018,
+        0.0014805818294771158,
+        0.24297277231166364,
+        -0.0063434746424877436,
+        0.00906076277486387,
+        0.5500172441997455
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "minimum_distance_m": 0.36063290841525486,
+      "time_s": 3.2700000000000005,
+      "phase": "decelerating",
+      "sample_index": 261,
+      "closest_points_world_m": [
+        -0.11827682423902379,
+        0.11120245956833538,
+        0.44739223673130274,
+        -0.04544292221457692,
+        0.46335180725545444,
+        0.4201497281927083
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "minimum_distance_m": 0.39099164371033623,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        -0.06741405097299201,
+        0.14299915728405718,
+        0.5743392382824725,
+        0.04653085539709845,
+        0.5113620148892963,
+        0.5095331513729541
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "geom_b": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "minimum_distance_m": 0.39418140912865374,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        -0.08733813855751024,
+        0.15516920130725126,
+        0.5770821100755358,
+        0.028565702234100994,
+        0.529864932441992,
+        0.5377324968397493
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "minimum_distance_m": 0.4009330999884687,
+      "time_s": 5.9,
+      "phase": "decelerating",
+      "sample_index": 449,
+      "closest_points_world_m": [
+        -0.09730329312548672,
+        0.14897810242445086,
+        0.5541372121966821,
+        0.02861263825188104,
+        0.5284331146347079,
+        0.524030359152114
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "minimum_distance_m": 0.4636379831843965,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        1.532782434016655e-07,
+        0.041728746171842995,
+        0.22611277934560017,
+        1.3377051706815848e-06,
+        0.3641792747706245,
+        0.5592581471000659
+      ]
+    },
+    {
+      "kind": "robot_self",
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "minimum_distance_m": 0.4648077337361494,
+      "time_s": 0.0,
+      "phase": "start",
+      "sample_index": 0,
+      "closest_points_world_m": [
+        -0.13399985484245427,
+        0.03951819885539559,
+        0.20814809920059313,
+        -0.13399873034362633,
+        0.345653793330999,
+        0.5579011937326352
+      ]
+    }
+  ],
+  "excluded_self_collision_pairs": [
+    {
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 10,
+        "geom_name": "unnamed_geom_10",
+        "body_id": 2,
+        "body_name": "shoulder_link",
+        "label": "shoulder_link/unnamed_geom_10[10]"
+      },
+      "geom_b": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "reason": "same rigid link"
+    },
+    {
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 15,
+        "geom_name": "unnamed_geom_15",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_15[15]"
+      },
+      "geom_b": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 16,
+        "geom_name": "unnamed_geom_16",
+        "body_id": 3,
+        "body_name": "upper_arm_link",
+        "label": "upper_arm_link/unnamed_geom_16[16]"
+      },
+      "geom_b": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "geom_b": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "reason": "same rigid link"
+    },
+    {
+      "geom_a": {
+        "geom_id": 21,
+        "geom_name": "unnamed_geom_21",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_21[21]"
+      },
+      "geom_b": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 22,
+        "geom_name": "unnamed_geom_22",
+        "body_id": 4,
+        "body_name": "forearm_link",
+        "label": "forearm_link/unnamed_geom_22[22]"
+      },
+      "geom_b": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "geom_b": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 26,
+        "geom_name": "unnamed_geom_26",
+        "body_id": 5,
+        "body_name": "wrist_1_link",
+        "label": "wrist_1_link/unnamed_geom_26[26]"
+      },
+      "geom_b": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "geom_b": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "reason": "same rigid link"
+    },
+    {
+      "geom_a": {
+        "geom_id": 30,
+        "geom_name": "unnamed_geom_30",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_30[30]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "reason": "direct parent-child links"
+    },
+    {
+      "geom_a": {
+        "geom_id": 31,
+        "geom_name": "unnamed_geom_31",
+        "body_id": 6,
+        "body_name": "wrist_2_link",
+        "label": "wrist_2_link/unnamed_geom_31[31]"
+      },
+      "geom_b": {
+        "geom_id": 33,
+        "geom_name": "unnamed_geom_33",
+        "body_id": 7,
+        "body_name": "wrist_3_link",
+        "label": "wrist_3_link/unnamed_geom_33[33]"
+      },
+      "reason": "direct parent-child links"
+    }
+  ],
+  "method_limitations": [
+    "The path is checked at discrete configurations generated by piecewise-linear interpolation; this is not a mathematical continuous-collision-detection guarantee.",
+    "Same-link and direct parent-child robot geometry pairs are excluded from self-collision checks because their primitives normally overlap by design around joints.",
+    "The scene environment geoms have disabled MuJoCo contact masks. This script evaluates their geometric distances directly and does not enable physical contact response.",
+    "The result is a simulation geometry preflight, not a clinical, mechanical, or functional safety certification."
+  ],
+  "output_files": {
+    "sample_csv": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Validation/Task_Space_Collision_Preflight/task_space_collision_preflight_20261123_205151_samples.csv",
+    "metrics_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Validation/Task_Space_Collision_Preflight/task_space_collision_preflight_20261123_205151_metrics.json"
+  }
+}
