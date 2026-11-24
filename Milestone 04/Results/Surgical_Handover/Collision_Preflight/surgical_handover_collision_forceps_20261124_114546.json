@@ -1,0 +1,966 @@
+{
+  "status": "FAIL_COLLISION",
+  "preflight_passed": false,
+  "instrument": "forceps",
+  "plan_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Planning/surgical_handover_plan_forceps_20261124_134320_834241.json",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "scene_xml_sha256": "5a16730d476257e6c13bbd6b6811765ccff081db312a42f7108cc5858631ee97",
+  "mujoco_version": "3.2.7",
+  "collision_distance_backend": {
+    "name": "MuJoCo native CCD",
+    "native_ccd_enabled": true,
+    "enable_flag": "mjtEnableBit.mjENBL_NATIVECCD"
+  },
+  "model_dimensions": {
+    "nq": 6,
+    "nv": 6,
+    "nu": 6
+  },
+  "home_start_error_max_rad": 0.0,
+  "trajectory": {
+    "sample_count": 4651,
+    "sample_period_s": 0.005,
+    "duration_s": 23.231631216489824,
+    "pickup_attachment_time_s": 10.16305612565922,
+    "handover_release_time_s": 18.62002124258992,
+    "segments": [
+      "approach_clearance",
+      "pregrasp",
+      "pickup",
+      "lift",
+      "transfer_clearance",
+      "handover_approach",
+      "handover",
+      "retreat",
+      "return_home"
+    ],
+    "interpolation": "project QuinticJointTrajectory point-to-point segments"
+  },
+  "geometry_counts": {
+    "robot_collision_geoms": 9,
+    "static_scene_geoms_excluding_selected_instrument": 62,
+    "selected_instrument_geoms": 3,
+    "robot_self_pairs_checked": 21,
+    "robot_environment_pairs_per_sample_before_pickup_and_after_release": 585,
+    "robot_environment_pairs_per_sample_while_attached": 558,
+    "carried_instrument_environment_pairs_per_sample": 186
+  },
+  "clearance_thresholds": {
+    "distance_cap_m": 0.05,
+    "minimum_clearance_m": 0.02,
+    "warning_clearance_m": 0.05
+  },
+  "minimum_clearances": {
+    "robot_environment": {
+      "minimum_distance_m": 0.022274157327516603,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.022274157327516603,
+      "time_s": 18.62002124258992,
+      "closest_pair": {
+        "geom_a": "geom_33",
+        "geom_b": "handover_glove_palm"
+      }
+    },
+    "robot_self": {
+      "minimum_distance_m": 0.0450260011213282,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.0450260011213282,
+      "time_s": 0.0,
+      "closest_pair": {
+        "geom_a": "geom_26",
+        "geom_b": "geom_33"
+      }
+    },
+    "carried_instrument_environment": {
+      "minimum_distance_m": 0.020187743657513475,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.020187743657513475,
+      "time_s": 10.568056125659218,
+      "closest_pair": {
+        "geom_a": "forceps_hinge",
+        "geom_b": "tray_forceps_pad"
+      }
+    }
+  },
+  "collision_event_count": 2067,
+  "collision_events": [
+    {
+      "category": "pickup_support",
+      "time_s": 0.0,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.005,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.01,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.015,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.02,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.025,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.03,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.035,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.04,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.045,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.05,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.055,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.06,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.065,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.07,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.075,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.08,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.085,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.09,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.095,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.1,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.105,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.11,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.115,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.12,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.125,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.13,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.135,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.14,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.145,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.15,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.155,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.16,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.165,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.17,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.17500000000000002,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.18,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.185,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.19,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.195,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.2,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.20500000000000002,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.21,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.215,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.22,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.225,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.23,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.23500000000000001,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.24,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.245,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.25,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.255,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.26,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.265,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.27,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.275,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.28,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.28500000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.29,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.295,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.3,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.305,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.31,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.315,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.32,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.325,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.33,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.335,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.34,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.34500000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.35000000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.355,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.36,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.365,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.37,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.375,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.38,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.385,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.39,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.395,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.4,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.405,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.41000000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.41500000000000004,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.42,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.425,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.43,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.435,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.44,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.445,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.45,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.455,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.46,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.465,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.47000000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.47500000000000003,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.48,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.485,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.49,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    },
+    {
+      "category": "pickup_support",
+      "time_s": 0.495,
+      "phase": "approach_clearance",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "signed_distance_m": -0.001999999999999994
+    }
+  ],
+  "joint_limit_violation_count": 0,
+  "joint_limit_violations": [],
+  "closest_pairs_below_warning": [
+    {
+      "category": "carried_instrument_environment",
+      "geom_a": "forceps_hinge",
+      "geom_b": "tray_forceps_pad",
+      "minimum_distance_m": 0.020187743657513475,
+      "time_s": 10.568056125659218,
+      "phase": "lift"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "minimum_distance_m": 0.022274157327516603,
+      "time_s": 18.62002124258992,
+      "phase": "handover"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "forceps_hinge",
+      "minimum_distance_m": 0.02799957652025504,
+      "time_s": 10.159899194440229,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "tray_forceps_pad",
+      "minimum_distance_m": 0.0399994441476659,
+      "time_s": 10.16305612565922,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_self",
+      "geom_a": "geom_26",
+      "geom_b": "geom_33",
+      "minimum_distance_m": 0.0450260011213282,
+      "time_s": 0.0,
+      "phase": "approach_clearance"
+    }
+  ],
+  "pickup_support_contact": {
+    "policy_type": "temporary_pickup_assembly_near_support_allowance",
+    "support_geometries": [
+      "tray_base",
+      "tray_forceps_pad",
+      "trolley_top"
+    ],
+    "allowed_only_during_pickup_and_lift": true,
+    "support_distances_measured_each_sample": true,
+    "penetration_allowed": false,
+    "signed_support_distances_checked_for_penetration": true,
+    "required_clearance_to_end_allowance_m": 0.02,
+    "cleared": true,
+    "clear_time_s": 10.568056125659218,
+    "allowed_sample_count": 81,
+    "clearance_violation": false
+  },
+  "intentional_contact_policy": {
+    "robot_instrument_pair": "excluded while instrument is attached because this is the modeled rigid grasp",
+    "instrument_pickup_assembly_support_pair": "tray_base, selected instrument pad, and trolley_top form a temporary monitored pickup-assembly near-support envelope; their distances are measured each sample, penetration is never allowed, and the allowance ends only when every selected support pair reaches the configured minimum clearance during pickup/lift; all other tray/trolley geometry remains checked",
+    "instrument_receiver_pair": "excluded during handover, retreat and return_home; the simulated hand is the intended receiver",
+    "robot_receiver_pair": "never excluded; UR5e collision proxies remain checked against surgeon hand geometries"
+  },
+  "limitations": [
+    "Sampled kinematic geometry sweep; not continuous collision detection.",
+    "Does not simulate actuator lag, tracking error, forces, friction, or physical gripper contact.",
+    "UR5e uses simplified collision proxies in MuJoCo geom group 3, not visual meshes.",
+    "Same-link and direct parent-child self-collision pairs are excluded because their proxies overlap by design.",
+    "The instrument is carried with a mocap rigid-transform approximation matching the bridge; the robot-instrument attachment pair is treated as intentional contact.",
+    "Instrument contact with the surgeon receiver body is excluded during handover and after release; robot-to-receiver clearance remains checked.",
+    "The result is a simulation preflight, not a safety certification or authorization for real hardware."
+  ],
+  "csv_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_forceps_20261124_114546.csv",
+  "json_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_forceps_20261124_114546.json"
+}

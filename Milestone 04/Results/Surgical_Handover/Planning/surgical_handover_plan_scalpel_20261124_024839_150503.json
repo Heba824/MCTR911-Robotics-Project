@@ -1,0 +1,240 @@
+{
+  "instrument": "scalpel",
+  "world_from_dh": [
+    [
+      1.0,
+      2.545868636161901e-16,
+      7.38738099575867e-17,
+      -5.551115123125783e-17
+    ],
+    [
+      -2.5458537998531003e-16,
+      1.0000000000000002,
+      4.146625330813829e-17,
+      -2.7755575615628914e-16
+    ],
+    [
+      -7.387426489835266e-17,
+      -3.971006089205989e-17,
+      1.0000000000000004,
+      -5.551115123125783e-17
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "initial_joint_positions_rad": [
+    -1.570800000000022,
+    -1.5627206085782093,
+    1.5787262229412282,
+    -1.5680435508136443,
+    -1.570799998949917,
+    -8.60964722367037e-22
+  ],
+  "tool_orientation_policy": "Preserve the measured MuJoCo attachment_site orientation throughout pickup and handover; the bridge captures the instrument-relative pose at grasp.",
+  "waypoints": [
+    {
+      "name": "pregrasp",
+      "position_world_m": [
+        0.75,
+        -0.13,
+        0.23600000000000002
+      ],
+      "joint_positions_rad": [
+        -3.487830227515647,
+        -0.8382449229612735,
+        1.2133879883075458,
+        -1.952309323763925,
+        -1.5884401796851493,
+        -1.917086458890787
+      ],
+      "duration_from_previous_s": 7.1890742208404514,
+      "ik_success": true,
+      "ik_iterations": 29,
+      "ik_position_error_m": 9.196578025742875e-06,
+      "ik_orientation_error_rad": 1.361982730593097e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "pickup",
+      "position_world_m": [
+        0.75,
+        -0.13,
+        0.136
+      ],
+      "joint_positions_rad": [
+        -3.4878305147167357,
+        -0.7259712068460781,
+        1.2907095464451181,
+        -2.1419045953260745,
+        -1.5884401782007225,
+        -1.9170867459004233
+      ],
+      "duration_from_previous_s": 1.1697375831435826,
+      "ik_success": true,
+      "ik_iterations": 3,
+      "ik_position_error_m": 2.19336730558373e-06,
+      "ik_orientation_error_rad": 5.858990918897218e-09,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "lift",
+      "position_world_m": [
+        0.75,
+        -0.13,
+        0.256
+      ],
+      "joint_positions_rad": [
+        -3.4878305218185806,
+        -0.8557601674935765,
+        1.1899163147270597,
+        -1.91132240795396,
+        -1.5884401776251438,
+        -1.9170867530892237
+      ],
+      "duration_from_previous_s": 1.2899936431511159,
+      "ik_success": true,
+      "ik_iterations": 3,
+      "ik_position_error_m": 9.729214966869927e-06,
+      "ik_orientation_error_rad": 1.075493545656157e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "transfer_clearance",
+      "position_world_m": [
+        0.525,
+        0.15,
+        0.5800000000000001
+      ],
+      "joint_positions_rad": [
+        -3.1077013505605926,
+        -1.4540287441031279,
+        1.2094118610891167,
+        -1.325547339495618,
+        -1.5895440674705283,
+        -1.5368954601897216
+      ],
+      "duration_from_previous_s": 2.2435071622858174,
+      "ik_success": true,
+      "ik_iterations": 9,
+      "ik_position_error_m": 3.5362034997663723e-06,
+      "ik_orientation_error_rad": 7.235704725243242e-09,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "handover_approach",
+      "position_world_m": [
+        0.3,
+        0.43,
+        0.48
+      ],
+      "joint_positions_rad": [
+        -2.435586599481327,
+        -1.5318471662310083,
+        1.5483747444868179,
+        -1.5751553836284689,
+        -1.585072689039569,
+        -0.8646997697968494
+      ],
+      "duration_from_previous_s": 2.5207338389732707,
+      "ik_success": true,
+      "ik_iterations": 9,
+      "ik_position_error_m": 1.682152616221196e-07,
+      "ik_orientation_error_rad": 6.9640509990400636e-09,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "handover",
+      "position_world_m": [
+        0.3,
+        0.43,
+        0.38
+      ],
+      "joint_positions_rad": [
+        -2.4355863455020605,
+        -1.497775181857386,
+        1.770713282432111,
+        -1.8315659009896301,
+        -1.5850726791431946,
+        -0.8646995163149037
+      ],
+      "duration_from_previous_s": 1.3603247830091794,
+      "ik_success": true,
+      "ik_iterations": 4,
+      "ik_position_error_m": 7.432539143644672e-08,
+      "ik_orientation_error_rad": 3.8025567860021067e-10,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "retreat",
+      "position_world_m": [
+        0.3,
+        0.43,
+        0.48
+      ],
+      "joint_positions_rad": [
+        -2.4355863970542058,
+        -1.5322001990061667,
+        1.5487476390673738,
+        -1.575175293345193,
+        -1.5850726773610273,
+        -0.8646995686128495
+      ],
+      "duration_from_previous_s": 1.360271968859571,
+      "ik_success": true,
+      "ik_iterations": 3,
+      "ik_position_error_m": 0.00015016658101501206,
+      "ik_orientation_error_rad": 5.255948176063311e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "return_home",
+      "position_world_m": null,
+      "joint_positions_rad": [
+        -1.5708,
+        -1.5708,
+        1.5708,
+        -1.5708,
+        -1.5708,
+        0.0
+      ],
+      "duration_from_previous_s": 3.242948988953272,
+      "ik_success": true,
+      "ik_iterations": 0,
+      "ik_position_error_m": 0.0,
+      "ik_orientation_error_rad": 0.0,
+      "ik_message": "Joint-space HOME target; no IK required"
+    }
+  ],
+  "planning_only": true,
+  "motion_executed": false,
+  "collision_check_performed": false,
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "model_nq": 6,
+  "model_nv": 6,
+  "model_nu": 6,
+  "maximum_initial_home_error_rad": 0.008079391421790705,
+  "maximum_initial_joint_speed_rad_s": 1.1004369410196432e-13,
+  "actuator_lower_limits_rad": [
+    -6.2831,
+    -6.2831,
+    -3.1415,
+    -6.2831,
+    -6.2831,
+    -6.2831
+  ],
+  "actuator_upper_limits_rad": [
+    6.2831,
+    6.2831,
+    3.1415,
+    6.2831,
+    6.2831,
+    6.2831
+  ],
+  "pickup_pose_age_s": 0.8166361879993929,
+  "handover_pose_age_s": 0.8161621890030801,
+  "attachment_pose_age_s": 0.8158042909999494
+}

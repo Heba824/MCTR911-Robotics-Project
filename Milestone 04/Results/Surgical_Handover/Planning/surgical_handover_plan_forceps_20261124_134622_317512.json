@@ -1,0 +1,364 @@
+{
+  "instrument": "forceps",
+  "world_from_dh": [
+    [
+      0.9999999999999991,
+      2.2288649669981993e-16,
+      -6.58768034335167e-17,
+      -1.6653345369377348e-16
+    ],
+    [
+      -2.2288597597066666e-16,
+      0.9999999999999992,
+      3.7887333131891406e-17,
+      2.220446049250313e-16
+    ],
+    [
+      6.587689685575595e-17,
+      -3.788669736590851e-17,
+      0.9999999999999991,
+      3.3306690738754696e-16
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "initial_joint_positions_rad": [
+    -1.5708,
+    -1.5708,
+    1.5708,
+    -1.5708,
+    -1.5708,
+    0.0
+  ],
+  "tool_from_instrument": [
+    [
+      0.9999999999865085,
+      -3.6732185959191824e-06,
+      3.673205103326442e-06,
+      -1.2856217868062458e-07
+    ],
+    [
+      -3.673205103483451e-06,
+      -0.9999999999865085,
+      -3.6732051033699232e-06,
+      1.2856217856960228e-07
+    ],
+    [
+      3.673218595762174e-06,
+      3.6731916108846316e-06,
+      -0.9999999999865086,
+      0.034999999999527825
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "desired_instrument_handover_pose_world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.3
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.43
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.38
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "desired_tool_handover_pose_world": [
+    [
+      0.9999999999865067,
+      -3.673205103483445e-06,
+      3.673218595762167e-06,
+      0.30000000000000004
+    ],
+    [
+      -3.673218595919176e-06,
+      -0.9999999999865067,
+      3.673191610884624e-06,
+      0.42999999999999994
+    ],
+    [
+      3.6732051033264353e-06,
+      -3.673205103369917e-06,
+      -0.9999999999865066,
+      0.41500000000000004
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "tool_orientation_policy": "Capture the full instrument-body transform relative to attachment_site at pickup; compensate the handover attachment_site target so the instrument body reaches handover_target_site. Preserve the measured tool orientation where compatible.",
+  "waypoints": [
+    {
+      "name": "approach_clearance",
+      "position_world_m": [
+        0.1,
+        0.2,
+        0.8
+      ],
+      "joint_positions_rad": [
+        -2.6771289993315097,
+        -1.8798836317132261,
+        0.8691562248289312,
+        -0.5600738777085286,
+        -1.5707947010934875,
+        -1.1063289838089732
+      ],
+      "duration_from_previous_s": 4.148733747493162,
+      "ik_success": true,
+      "ik_iterations": 15,
+      "ik_position_error_m": 4.406531848283394e-05,
+      "ik_orientation_error_rad": 3.4804881323513135e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "pregrasp",
+      "position_world_m": [
+        0.75,
+        -0.29,
+        0.23900000000000002
+      ],
+      "joint_positions_rad": [
+        -3.6779770750796588,
+        -0.7322573211420432,
+        1.0117531837108555,
+        -1.8502934923911618,
+        -1.5707912902926948,
+        -2.1071770750256844
+      ],
+      "duration_from_previous_s": 4.838323555059874,
+      "ik_success": true,
+      "ik_iterations": 24,
+      "ik_position_error_m": 2.4832099826295002e-05,
+      "ik_orientation_error_rad": 2.2875965521871896e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "pickup",
+      "position_world_m": [
+        0.75,
+        -0.29,
+        0.139
+      ],
+      "joint_positions_rad": [
+        -3.6779768705510127,
+        -0.6338328172189416,
+        1.0986036606511236,
+        -2.0355684574351365,
+        -1.5707912916733213,
+        -2.107176870540977
+      ],
+      "duration_from_previous_s": 1.156333380465152,
+      "ik_success": true,
+      "ik_iterations": 3,
+      "ik_position_error_m": 2.7366256988158156e-06,
+      "ik_orientation_error_rad": 6.995505700809167e-09,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "lift",
+      "position_world_m": [
+        0.75,
+        -0.29,
+        0.259
+      ],
+      "joint_positions_rad": [
+        -3.677976878254858,
+        -0.7465585043116415,
+        0.9851148614097197,
+        -1.8093539773978118,
+        -1.5707912910469621,
+        -2.1071768782449056
+      ],
+      "duration_from_previous_s": 1.2777176475269323,
+      "ik_success": true,
+      "ik_iterations": 3,
+      "ik_position_error_m": 1.0266913891917778e-05,
+      "ik_orientation_error_rad": 1.3323352030179087e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "transfer_clearance",
+      "position_world_m": [
+        0.525,
+        0.06999999999999998,
+        0.615
+      ],
+      "joint_positions_rad": [
+        -3.2647999672391173,
+        -1.4712477874992067,
+        1.1356934033793362,
+        -1.2352451663221218,
+        -1.5707922264132774,
+        -1.693999975237216
+      ],
+      "duration_from_previous_s": 2.7175848119533694,
+      "ik_success": true,
+      "ik_iterations": 10,
+      "ik_position_error_m": 4.7866998831992436e-05,
+      "ik_orientation_error_rad": 3.096609216768553e-08,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "handover_approach",
+      "position_world_m": [
+        0.30000000000000004,
+        0.42999999999999994,
+        0.515
+      ],
+      "joint_positions_rad": [
+        -2.4384114522592997,
+        -1.5335093260811083,
+        1.4638308439665322,
+        -1.5011230270544167,
+        -1.570795900681404,
+        -0.8676114494193428
+      ],
+      "duration_from_previous_s": 3.0989569718170245,
+      "ik_success": true,
+      "ik_iterations": 10,
+      "ik_position_error_m": 6.310955711071831e-06,
+      "ik_orientation_error_rad": 5.960918247991995e-09,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "handover",
+      "position_world_m": [
+        0.30000000000000004,
+        0.42999999999999994,
+        0.41500000000000004
+      ],
+      "joint_positions_rad": [
+        -2.438401714690127,
+        -1.519835387077654,
+        1.7057227787907472,
+        -1.756688896202215,
+        -1.5707959001433869,
+        -0.867601714682239
+      ],
+      "duration_from_previous_s": 1.3580823950894971,
+      "ik_success": true,
+      "ik_iterations": 4,
+      "ik_position_error_m": 1.6397438196589765e-07,
+      "ik_orientation_error_rad": 5.503128009417075e-10,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "retreat",
+      "position_world_m": [
+        0.30000000000000004,
+        0.42999999999999994,
+        0.515
+      ],
+      "joint_positions_rad": [
+        -2.438401713904774,
+        -1.533499836852732,
+        1.4638133986389708,
+        -1.501115066291568,
+        -1.5707959001800436,
+        -0.8676017138969859
+      ],
+      "duration_from_previous_s": 1.3581035467552522,
+      "ik_success": true,
+      "ik_iterations": 4,
+      "ik_position_error_m": 6.21598882535273e-08,
+      "ik_orientation_error_rad": 5.602520927149815e-10,
+      "ik_message": "Converged"
+    },
+    {
+      "name": "return_home",
+      "position_world_m": null,
+      "joint_positions_rad": [
+        -1.5708,
+        -1.5708,
+        1.5708,
+        -1.5708,
+        -1.5708,
+        0.0
+      ],
+      "duration_from_previous_s": 3.2535064271429017,
+      "ik_success": true,
+      "ik_iterations": 0,
+      "ik_position_error_m": 0.0,
+      "ik_orientation_error_rad": 0.0,
+      "ik_message": "Joint-space HOME target; no IK required"
+    }
+  ],
+  "planning_only": true,
+  "motion_executed": false,
+  "collision_check_performed": false,
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "model_nq": 6,
+  "model_nv": 6,
+  "model_nu": 6,
+  "maximum_initial_home_error_rad": 0.0,
+  "maximum_initial_joint_speed_rad_s": 0.0,
+  "actuator_lower_limits_rad": [
+    -6.2831,
+    -6.2831,
+    -3.1415,
+    -6.2831,
+    -6.2831,
+    -6.2831
+  ],
+  "actuator_upper_limits_rad": [
+    6.2831,
+    6.2831,
+    3.1415,
+    6.2831,
+    6.2831,
+    6.2831
+  ],
+  "instrument_body_initial_pose_world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.75
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.29
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.104
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "planning_source": "scene HOME keyframe"
+}

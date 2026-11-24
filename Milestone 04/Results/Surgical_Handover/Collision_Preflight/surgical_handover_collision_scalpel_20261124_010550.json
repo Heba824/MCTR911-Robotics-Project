@@ -1,0 +1,965 @@
+{
+  "status": "FAIL_COLLISION",
+  "preflight_passed": false,
+  "instrument": "scalpel",
+  "plan_json": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Planning/surgical_handover_plan_scalpel_20261124_024839_150503.json",
+  "scene_xml": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 01/Robot Model/scene_surgical_handover.xml",
+  "mujoco_version": "3.2.0",
+  "model_dimensions": {
+    "nq": 6,
+    "nv": 6,
+    "nu": 6
+  },
+  "home_start_error_max_rad": 0.008079391421790705,
+  "trajectory": {
+    "sample_count": 4080,
+    "sample_period_s": 0.005,
+    "duration_s": 20.37659218921626,
+    "pickup_attachment_time_s": 8.358811803984034,
+    "handover_release_time_s": 15.773371231403418,
+    "segments": [
+      "pregrasp",
+      "pickup",
+      "lift",
+      "transfer_clearance",
+      "handover_approach",
+      "handover",
+      "retreat",
+      "return_home"
+    ],
+    "interpolation": "project QuinticJointTrajectory point-to-point segments"
+  },
+  "geometry_counts": {
+    "robot_collision_geoms": 9,
+    "static_scene_geoms_excluding_selected_instrument": 62,
+    "selected_instrument_geoms": 3,
+    "robot_self_pairs_checked": 21,
+    "robot_environment_pairs_per_sample_before_pickup_and_after_release": 585,
+    "robot_environment_pairs_per_sample_while_attached": 558,
+    "carried_instrument_environment_pairs_per_sample": 186
+  },
+  "clearance_thresholds": {
+    "distance_cap_m": 0.05,
+    "minimum_clearance_m": 0.02,
+    "warning_clearance_m": 0.05
+  },
+  "minimum_clearances": {
+    "robot_environment": {
+      "minimum_distance_m": -0.019042727643954885,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": -0.019042727643954885,
+      "time_s": 3.1750000000000003,
+      "closest_pair": {
+        "geom_a": "geom_33",
+        "geom_b": "handover_glove_wrist"
+      }
+    },
+    "robot_self": {
+      "minimum_distance_m": 0.04427547733278001,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": 0.04427547733278001,
+      "time_s": 4.61,
+      "closest_pair": {
+        "geom_a": "geom_26",
+        "geom_b": "geom_33"
+      }
+    },
+    "carried_instrument_environment": {
+      "minimum_distance_m": -0.0030000000002301016,
+      "minimum_distance_is_capped_lower_bound": false,
+      "lower_bound_m": -0.0030000000002301016,
+      "time_s": 8.358811803984034,
+      "closest_pair": {
+        "geom_a": "scalpel_grip",
+        "geom_b": "tray_scalpel_pad"
+      }
+    }
+  },
+  "collision_event_count": 296,
+  "collision_events": [
+    {
+      "category": "robot_environment",
+      "time_s": 2.995,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0001924196824248589
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.0,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0009256659460303573
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.005,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0017363004620073522
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.0100000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.002696311068308324
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.015,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0033387389074251983
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.02,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.003942587114011575
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.025,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.004703109970196476
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.0300000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0053040882894882305
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.035,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.006012055646719874
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.04,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0066231925488983365
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.045,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.007485234087793759
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.0500000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.008152721775470571
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.055,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.008646738247389485
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.06,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.009243844694840297
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.065,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.00991846197656425
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.0700000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.010539429356073389
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.075,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01120888043944316
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.08,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.011836074081754203
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.085,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.012423100438097079
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.09,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.012768133628711709
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.095,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.013458101757313587
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.1,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.014028414612864457
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.105,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.014783061093007838
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.11,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.015261981009169659
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.115,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.015743061155592805
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.12,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01633461432468547
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.125,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.016694206235774944
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.13,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01710981377682233
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.1350000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01737881810302566
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.14,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.017958058116366082
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.145,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018155654007959557
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.15,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01856450722431864
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.1550000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018698806456025813
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.16,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018783482610202823
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.165,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018930425670627
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.17,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01901733820090333
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.1750000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.019042727643954885
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.18,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018827662976346735
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.185,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018708050833926224
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.19,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018354974369364105
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.1950000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.018149677946758355
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -3.6885841916800555e-05
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.017772873067075007
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.205,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0007126618791925762
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.205,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.017439042900932344
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.21,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0012365530756147033
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.21,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.016939561218622015
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.215,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0017588575705149295
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.215,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.016299774336147724
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.22,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0022928111273614535
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.22,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.015823797783255752
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.225,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.002648047004415177
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.225,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01506685122938814
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.23,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0031970566781383755
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.23,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.014260939035289008
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.235,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.003410997547393095
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.235,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.013606474863632853
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.24,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.003884035611611908
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.24,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01272569403537839
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.245,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004190095076457685
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.245,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.01189849668363882
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.25,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004371009124695589
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.25,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.010885626889334213
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.255,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004613902004814277
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.255,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.010081561800070839
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2600000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004621718017079807
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2600000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.009033889924376662
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.265,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0047962312077226565
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.265,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.007971742329794675
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.27,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004623318918382371
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.27,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.006775906065671078
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.275,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004643181326782313
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.275,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0057382263733737685
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2800000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.00441379687127174
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.2800000000000002,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.004668700398135182
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.285,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.004201408514593261
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.285,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0033726355859797774
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.29,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.003982916440620238
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.29,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.0022124459468236546
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.295,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.003692105443239689
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.295,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "signed_distance_m": -0.000935471943880585
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.3000000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.003337287414498534
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.305,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.00285025412654661
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.31,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0023982376420749116
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.315,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.001789786318319747
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.3200000000000003,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0012282455804349252
+    },
+    {
+      "category": "robot_environment",
+      "time_s": 3.325,
+      "phase": "pregrasp",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "signed_distance_m": -0.0004932856637309899
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.358811803984034,
+      "phase": "pickup",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.0030000000002301016
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.363811803984035,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002999931916038109
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.368811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.0029994584970314594
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.373811803984035,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.00299818309315685
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.378811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002995718460256999
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.383811803984035,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.0029916866842495723
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.388811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.0029857191046998074
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.393811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002977456237854675
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.398811803984033,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002966547699180566
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.403811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002952652125466323
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.408811803984035,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.00293543709653917
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.413811803984034,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.002914579056639324
+    },
+    {
+      "category": "carried_instrument_environment",
+      "time_s": 8.418811803984035,
+      "phase": "lift",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "signed_distance_m": -0.00288976323550561
+    }
+  ],
+  "joint_limit_violation_count": 0,
+  "joint_limit_violations": [],
+  "closest_pairs_below_warning": [
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_wrist",
+      "minimum_distance_m": -0.019042727643954885,
+      "time_s": 3.1750000000000003,
+      "phase": "pregrasp"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_palm",
+      "minimum_distance_m": -0.008145689501069489,
+      "time_s": 15.773371231403418,
+      "phase": "handover"
+    },
+    {
+      "category": "carried_instrument_environment",
+      "geom_a": "scalpel_grip",
+      "geom_b": "tray_scalpel_pad",
+      "minimum_distance_m": -0.0030000000002301016,
+      "time_s": 8.358811803984034,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "handover_glove_thumb",
+      "minimum_distance_m": 0.0036540653107378154,
+      "time_s": 3.435,
+      "phase": "pregrasp"
+    },
+    {
+      "category": "carried_instrument_environment",
+      "geom_a": "scalpel_neck",
+      "geom_b": "tray_scalpel_pad",
+      "minimum_distance_m": 0.005037883836267829,
+      "time_s": 8.633811803984035,
+      "phase": "lift"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "scalpel_grip",
+      "minimum_distance_m": 0.026993580884317015,
+      "time_s": 8.354074220840452,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_environment",
+      "geom_a": "geom_33",
+      "geom_b": "tray_scalpel_pad",
+      "minimum_distance_m": 0.039249470463360275,
+      "time_s": 8.358811803984034,
+      "phase": "pickup"
+    },
+    {
+      "category": "robot_self",
+      "geom_a": "geom_26",
+      "geom_b": "geom_33",
+      "minimum_distance_m": 0.04427547733278001,
+      "time_s": 4.61,
+      "phase": "pregrasp"
+    }
+  ],
+  "intentional_contact_policy": {
+    "robot_instrument_pair": "excluded while instrument is attached because this is the modeled rigid grasp",
+    "instrument_receiver_pair": "excluded during handover, retreat and return_home; the simulated hand is the intended receiver",
+    "robot_receiver_pair": "never excluded; UR5e collision proxies remain checked against surgeon hand geometries"
+  },
+  "limitations": [
+    "Sampled kinematic geometry sweep; not continuous collision detection.",
+    "Does not simulate actuator lag, tracking error, forces, friction, or physical gripper contact.",
+    "UR5e uses simplified collision proxies in MuJoCo geom group 3, not visual meshes.",
+    "Same-link and direct parent-child self-collision pairs are excluded because their proxies overlap by design.",
+    "The instrument is carried with a mocap rigid-transform approximation matching the bridge; the robot-instrument attachment pair is treated as intentional contact.",
+    "Instrument contact with the surgeon receiver body is excluded during handover and after release; robot-to-receiver clearance remains checked.",
+    "The result is a simulation preflight, not a safety certification or authorization for real hardware."
+  ],
+  "csv_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_scalpel_20261124_010550.csv",
+  "json_report": "/home/bedo/mctr911_project/MCTR911-Robotics-Project-Fresh/Milestone 04/Results/Surgical_Handover/Collision_Preflight/surgical_handover_collision_scalpel_20261124_010550.json"
+}
