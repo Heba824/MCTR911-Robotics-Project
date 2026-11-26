@@ -1,0 +1,12 @@
+dataset,mode,trial,pass,commands,valid_receipts,endpoint_received,fault,source_summary
+stage3,model_only,1,True,842,842,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage3,joint_flc,1,True,838,838,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage3,model_only,2,True,835,835,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage3,joint_flc,2,True,825,825,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage3,model_only,3,True,840,840,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage3,joint_flc,3,True,836,836,True,,stage3_results/wsl_live_repair_20261124_204350/summary.json
+stage4_cartesian,cartesian_flc,1,True,834,834,True,,stage4_repair_wsl_20261124_211821/cartesian/summary.json
+stage4_cartesian,cartesian_flc,2,True,828,828,True,,stage4_repair_wsl_20261124_211821/cartesian/summary.json
+stage4_cartesian,cartesian_flc,3,True,835,835,True,,stage4_repair_wsl_20261124_211821/cartesian/summary.json
+stage4_regression,model_only,1,True,838,838,True,,stage4_repair_wsl_20261124_211821/regression/summary.json
+stage4_regression,joint_flc,1,True,841,841,True,,stage4_repair_wsl_20261124_211821/regression/summary.json

@@ -1,0 +1,2 @@
+[INFO] [1795545842.196650142] [rpc3.controller_node]: Warm-up complete before ROS command setup: first=0.800 ms, max=0.800 ms
+[INFO] [1795545842.702469865] [rpc3.controller_node]: Starting joint_flc from verified home

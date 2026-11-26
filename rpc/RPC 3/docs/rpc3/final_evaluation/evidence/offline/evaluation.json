@@ -1,0 +1,70 @@
+{
+  "tracking": [
+    {
+      "mode": "model_only",
+      "source": "docs/rpc3/stage4_repair_20261124_211356/headless/model_only.csv",
+      "samples": 401,
+      "joint_rms_rad": 0.1168682566804652,
+      "joint_peak_rad": 0.25593900257451185,
+      "joint_final_max_rad": 0.25593900257451185,
+      "xyz_rms_m": 0.051904222093059386,
+      "xyz_peak_m": 0.09288383648960534,
+      "xyz_final_m": 0.09288383648960534,
+      "peak_absolute_command_Nm": 30.47104784877629
+    },
+    {
+      "mode": "joint_flc",
+      "source": "docs/rpc3/stage4_repair_20261124_211356/headless/joint_flc.csv",
+      "samples": 401,
+      "joint_rms_rad": 0.0012748546875273028,
+      "joint_peak_rad": 0.003229738186144776,
+      "joint_final_max_rad": 0.0005572836670920955,
+      "xyz_rms_m": 0.0003578136051146579,
+      "xyz_peak_m": 0.0005312613930124261,
+      "xyz_final_m": 7.982875523771882e-05,
+      "peak_absolute_command_Nm": 34.052810546276106
+    },
+    {
+      "mode": "cartesian_flc",
+      "source": "docs/rpc3/stage4_repair_20261124_211356/headless/cartesian_flc.csv",
+      "samples": 401,
+      "joint_rms_rad": 0.012111718918864518,
+      "joint_peak_rad": 0.029415510672562983,
+      "joint_final_max_rad": 0.009822722729171729,
+      "xyz_rms_m": 0.0009288553027003201,
+      "xyz_peak_m": 0.0014099666818011515,
+      "xyz_final_m": 0.00022011437594433457,
+      "peak_absolute_command_Nm": 34.06732576024555
+    }
+  ],
+  "singularity": {
+    "seed": 911,
+    "samples": 6000,
+    "contact_count_at_pose": 0,
+    "q_rad": [
+      -0.6842826289319808,
+      -0.17592195670972588,
+      2.182939222596852,
+      -0.41446763351608995,
+      2.0021585291576494,
+      2.3616989897070617,
+      2.7461569532304737
+    ],
+    "sigma": [
+      0.9298564077406268,
+      0.5367447060065949,
+      0.002301367637244041
+    ],
+    "damping": 0.0943293354850423,
+    "comparison_at_max_speed": {
+      "desired_speed_m_s": 0.08,
+      "undamped_joint_speed_norm_rad_s": 34.761938381910376,
+      "damped_joint_speed_norm_rad_s": 0.020678737210002605,
+      "bounded_joint_speed_norm_rad_s": 0.020678737210002605,
+      "undamped_task_residual_m_s": 3.134170564186769e-15,
+      "damped_task_residual_m_s": 0.07995241062340583,
+      "bounded_task_residual_m_s": 0.07995241062340583,
+      "joint_limit_activations": 0
+    }
+  }
+}

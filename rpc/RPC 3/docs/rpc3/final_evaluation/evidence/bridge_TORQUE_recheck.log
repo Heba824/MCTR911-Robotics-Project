@@ -1,0 +1,58 @@
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+[37;1m2026-11-24 21:38:20.929 [31;1m[[37;1mTRANSPORT_UDP[31;1m Error] [37mError creating socket: Operation not permitted[34;1m -> Function [36minit[m
+[37;1m2026-11-24 21:38:20.930 [31;1m[[37;1mRTPS_PARTICIPANT[31;1m Error] [37mUser transport failed to register.[34;1m -> Function [36mRTPSParticipantImpl[m
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+[INFO] [1795549101.415457537] [mujoco_node]: TORQUE ready at home, waiting for a valid command. Watchdog: 100 ms.
+getifaddrs: Operation not permitted
+[INFO] [1795549101.417026399] [mujoco_node]: Bridge: 10 physics steps per ROS callback, nominal update 10 ms
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+[WARN] [1795549101.419282908] [mujoco_node]: Rejected invalid TORQUE packet.
+[WARN] [1795549101.419375919] [mujoco_node]: Rejected TORQUE packet older than 50 ms at callback entry.
+[INFO] [1795549101.419463295] [mujoco_node]: First valid TORQUE packet received. Simulation active.
+[ERROR] [1795549101.603139625] [mujoco_node]: TORQUE watchdog expired. Simulation paused until relaunch.
+Two simulated seconds at home. Peak deviation (rad): 2.86556498e-18 8.36812615e-18 4.0398458e-18 0 4.19084264e-18 0 0
+Requested and applied hold torque (N m): 0 -29.3559531 0 22.0492104 0.669547795 2.30638957 5.86727911e-19
+Joint 1 requested 0.5 applied 0.5 N m, delta velocity 0.020781867 rad/s
+Joint 1 requested -0.5 applied -0.5 N m, delta velocity -0.0236158823 rad/s
+Joint 2 requested -28.8559531 applied -28.8559531 N m, delta velocity 0.0039700018 rad/s
+Joint 2 requested -29.8559531 applied -29.8559531 N m, delta velocity -0.00406925853 rad/s
+Joint 3 requested 0.5 applied 0.5 N m, delta velocity 0.0209433046 rad/s
+Joint 3 requested -0.5 applied -0.5 N m, delta velocity -0.0245568105 rad/s
+Joint 4 requested 22.5492104 applied 22.5492104 N m, delta velocity 0.0114567103 rad/s
+Joint 4 requested 21.5492104 applied 21.5492104 N m, delta velocity -0.0119349221 rad/s
+Joint 5 requested 1.16954779 applied 1.16954779 N m, delta velocity 0.0349303631 rad/s
+Joint 5 requested 0.169547795 applied 0.169547795 N m, delta velocity -0.0396599088 rad/s
+Joint 6 requested 2.80638957 applied 2.80638957 N m, delta velocity 0.0354094608 rad/s
+Joint 6 requested 1.80638957 applied 1.80638957 N m, delta velocity -0.0403927492 rad/s
+Joint 7 requested 0.5 applied 0.5 N m, delta velocity 0.0445636921 rad/s
+Joint 7 requested -0.5 applied -0.5 N m, delta velocity -0.0514364305 rad/s
+Finger positions (m): 0.00392083046 0.00392062581
+Accepted zero and signed limits, rejected seven malformed packets. One watchdog event, latched after a 110 ms gap.

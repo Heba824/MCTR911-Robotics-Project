@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="570" viewBox="0 0 1110 570">
+<rect width="100%" height="100%" fill="white" />
+<text x="75" y="42" font-family="Arial,sans-serif" font-size="27" font-weight="bold" fill="#17263c">RPC 2 — POSITION vs VELOCITY</text>
+<text x="75" y="69" font-family="Arial,sans-serif" font-size="15" fill="#4a5971">Team 1 repeated reach-and-return | Actual joint angles compared with current commanded target</text>
+
+<line x1="75" y1="470.00" x2="1040" y2="470.00" stroke="#e3e9f0" />
+<text x="65" y="475.00" text-anchor="end" font-family="Arial" font-size="13" fill="#61718b">0.0</text>
+<line x1="75" y1="388.75" x2="1040" y2="388.75" stroke="#e3e9f0" />
+<text x="65" y="393.75" text-anchor="end" font-family="Arial" font-size="13" fill="#61718b">463.5</text>
+<line x1="75" y1="307.50" x2="1040" y2="307.50" stroke="#e3e9f0" />
+<text x="65" y="312.50" text-anchor="end" font-family="Arial" font-size="13" fill="#61718b">927.0</text>
+<line x1="75" y1="226.25" x2="1040" y2="226.25" stroke="#e3e9f0" />
+<text x="65" y="231.25" text-anchor="end" font-family="Arial" font-size="13" fill="#61718b">1390.5</text>
+<line x1="75" y1="145.00" x2="1040" y2="145.00" stroke="#e3e9f0" />
+<text x="65" y="150.00" text-anchor="end" font-family="Arial" font-size="13" fill="#61718b">1854.0</text>
+<line x1="75.00" y1="145" x2="75.00" y2="470" stroke="#edf0f4" />
+<text x="75.00" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">0</text>
+<line x1="235.83" y1="145" x2="235.83" y2="470" stroke="#edf0f4" />
+<text x="235.83" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">3</text>
+<line x1="396.67" y1="145" x2="396.67" y2="470" stroke="#edf0f4" />
+<text x="396.67" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">6</text>
+<line x1="557.50" y1="145" x2="557.50" y2="470" stroke="#edf0f4" />
+<text x="557.50" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">10</text>
+<line x1="718.33" y1="145" x2="718.33" y2="470" stroke="#edf0f4" />
+<text x="718.33" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">13</text>
+<line x1="879.17" y1="145" x2="879.17" y2="470" stroke="#edf0f4" />
+<text x="879.17" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">16</text>
+<line x1="1040.00" y1="145" x2="1040.00" y2="470" stroke="#edf0f4" />
+<text x="1040.00" y="494" text-anchor="middle" font-family="Arial" font-size="13" fill="#61718b">19</text>
+<text x="557.5" y="525" text-anchor="middle" font-family="Arial" font-size="15" fill="#324760">Wall-clock time since start (s)</text>
+<text transform="translate(20 307.5) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="15" fill="#324760">Largest joint error (mrad)</text>
+<polyline fill="none" stroke="#2463b4" stroke-width="1.8" points="94.25,467.82 114.36,456.94 133.94,440.24 153.80,427.35 163.56,424.59 203.01,424.91 222.65,429.49 242.35,443.85 261.96,462.32 281.54,464.18 321.34,456.91 341.05,456.44 360.54,463.07 380.25,463.21 399.67,453.47 419.30,453.11 460.38,459.57 480.56,467.82 500.70,452.60 520.14,441.16 539.52,441.26 578.46,451.23 597.93,461.52 617.95,460.06 637.79,444.94 657.16,438.68 695.87,445.20 715.07,454.23 734.78,464.99 754.24,450.86 773.78,445.28 812.55,451.76 832.30,457.74 851.62,468.37 871.39,452.89 890.77,440.68 910.02,439.26 949.01,448.77 968.32,460.58 987.56,459.56 998.07,453.03 1019.60,445.01" />
+<polyline fill="none" stroke="#cf5d29" stroke-width="1.8" points="97.51,465.79 123.59,445.99 135.19,437.67 147.70,421.50 162.72,424.89 172.19,406.61 195.88,393.77 211.86,427.17 221.78,382.21 237.16,441.42 246.29,381.65 261.08,464.08 270.65,378.32 284.40,462.44 294.02,343.82 318.72,318.75 333.80,456.59 342.82,301.16 357.82,464.04 365.71,288.26 382.47,458.30 389.53,257.32 401.63,239.64 405.91,448.79 449.98,212.56 452.36,452.99 473.52,208.54 476.04,464.26 497.07,216.35 499.37,456.07 519.45,223.84 521.00,441.72 542.23,224.87 544.64,439.07 565.89,224.72 568.76,439.47 589.26,223.89 592.26,445.03 612.91,210.84 616.01,461.15 636.75,193.35 639.36,460.49 659.65,186.70 662.25,456.41 706.45,184.15 708.72,460.56 729.59,197.07 731.96,463.02 753.02,216.04 755.95,445.17 776.24,220.02 778.47,436.79 821.86,215.47 824.70,438.81 845.71,219.22 847.39,449.84 868.89,201.74 870.06,467.31 892.43,186.66 892.97,458.87 943.15,179.82 943.24,458.87 956.26,462.42 969.47,189.48 969.56,467.14 999.46,443.97 999.56,213.69 1024.12,435.49 1025.74,215.85" />
+<line x1="75" y1="565" x2="107" y2="565" stroke="#2463b4" stroke-width="4" />
+<text x="117" y="570" font-family="Arial" font-size="14" fill="#26374c">POSITION — RMSE 94.7 mrad; max 259.1 mrad</text>
+<line x1="550" y1="565" x2="582" y2="565" stroke="#cf5d29" stroke-width="4" />
+<text x="592" y="570" font-family="Arial" font-size="14" fill="#26374c">VELOCITY — RMSE 487.5 mrad; max 1655.3 mrad</text>
+<text x="75" y="551" font-family="Arial" font-size="12" fill="#65748c">Independent simulation runs; error is against current published/integrated actuator target, not a clock-aligned ideal reference.</text>
+</svg>

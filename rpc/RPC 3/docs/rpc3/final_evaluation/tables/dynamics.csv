@@ -1,0 +1,4 @@
+term,unit,max_abs,mean_abs,tolerance,pass,source_json
+mass,kg·m²,5.773159728050814e-15,2.1513812472478524e-16,1e-07,True,stage4_repair_20261124_211356/dynamics.json
+bias,N·m,5.874767339264508e-10,2.510753676470797e-11,0.001,True,stage4_repair_20261124_211356/dynamics.json
+inverse,N·m,5.87473181212772e-10,2.510744093657932e-11,0.001,True,stage4_repair_20261124_211356/dynamics.json

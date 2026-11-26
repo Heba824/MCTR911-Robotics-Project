@@ -1,0 +1,83 @@
+{
+  "mode": "VELOCITY",
+  "cycles": 4,
+  "leg_duration_s": 2.0,
+  "endpoint_hold_s": 0.4,
+  "wall_duration_s": 20.55394648699803,
+  "number_of_joint_state_samples": 85,
+  "commands_sent": 412,
+  "reference_definition": "cumulative 0.05s integration of published velocity samples",
+  "checkpoint_errors": [
+    {
+      "cycle": 1,
+      "leg": "reach",
+      "t_wall_s": 2.4003,
+      "max_endpoint_error_rad": 0.2564946459448376,
+      "endpoint_joint_rmse_rad": 0.20016259827182756
+    },
+    {
+      "cycle": 1,
+      "leg": "return",
+      "t_wall_s": 4.8527,
+      "max_endpoint_error_rad": 0.06452131387177751,
+      "endpoint_joint_rmse_rad": 0.05276580917693647
+    },
+    {
+      "cycle": 2,
+      "leg": "reach",
+      "t_wall_s": 7.3003,
+      "max_endpoint_error_rad": 0.1110959222628034,
+      "endpoint_joint_rmse_rad": 0.08395042658346505
+    },
+    {
+      "cycle": 2,
+      "leg": "return",
+      "t_wall_s": 9.7501,
+      "max_endpoint_error_rad": 0.1764203711399177,
+      "endpoint_joint_rmse_rad": 0.14012161838000153
+    },
+    {
+      "cycle": 3,
+      "leg": "reach",
+      "t_wall_s": 12.2045,
+      "max_endpoint_error_rad": 0.0714919607759168,
+      "endpoint_joint_rmse_rad": 0.052310016098896316
+    },
+    {
+      "cycle": 3,
+      "leg": "return",
+      "t_wall_s": 14.6526,
+      "max_endpoint_error_rad": 0.18747393935751555,
+      "endpoint_joint_rmse_rad": 0.14884866069474453
+    },
+    {
+      "cycle": 4,
+      "leg": "reach",
+      "t_wall_s": 17.1001,
+      "max_endpoint_error_rad": 0.07005146460595424,
+      "endpoint_joint_rmse_rad": 0.051132578621420954
+    },
+    {
+      "cycle": 4,
+      "leg": "return",
+      "t_wall_s": 19.5527,
+      "max_endpoint_error_rad": 1.4609994214505704,
+      "endpoint_joint_rmse_rad": 0.823387751477682
+    }
+  ],
+  "motion_joint_rmse_rad": 0.48754566881556183,
+  "motion_max_joint_error_rad": 1.6553483980016297,
+  "motion_samples": 69,
+  "any_measured_joint_out_of_limits": false,
+  "final_home_max_joint_error_rad": 0.1899454261885698,
+  "final_home_joint_rmse_rad": 0.15094882025192335,
+  "final_measured_q_rad": [
+    0.10331930049212094,
+    0.12549795005645842,
+    -0.1327422767033923,
+    -1.384618090406722,
+    0.1546480910687952,
+    1.7607354261885697,
+    -0.6410834195441094
+  ]
+}

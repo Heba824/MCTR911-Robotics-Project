@@ -1,0 +1,2 @@
+[INFO] [1795545874.975057719] [rpc3.controller_node]: Warm-up complete before ROS command setup: first=0.446 ms, max=0.662 ms
+[INFO] [1795545875.480146020] [rpc3.controller_node]: Starting model_only from verified home
