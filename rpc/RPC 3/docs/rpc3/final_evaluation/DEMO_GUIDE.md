@@ -2,30 +2,34 @@
 
 ## Build once on WSL
 
+Run the build and terminal setup from the submitted `rpc/RPC 3` directory. Replace the virtual environment path with your own if needed.
+
 ```bash
-cd /home/bedo/ros2_ws
 source /opt/ros/jazzy/setup.bash
-source /home/bedo/mctr911_kinematics_venv/bin/activate
+source $HOME/mctr911_kinematics_venv/bin/activate
 PYTHONPATH="/usr/lib/python3/dist-packages:$PYTHONPATH" python3 /usr/bin/colcon \
-  --log-base /tmp/rpc4-log build --build-base /tmp/rpc4-build \
-  --install-base /tmp/rpc4-install --packages-select panda_kinematics mujoco_ros2 \
+  --log-base /tmp/rpc3-log build --build-base /tmp/rpc3-build \
+  --install-base /tmp/rpc3-install --packages-select panda_kinematics mujoco_ros2 \
   --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3 -DBUILD_TESTING=ON
 ```
 
 ## Set up each terminal
 
 ```bash
-cd /home/bedo/ros2_ws
 source /opt/ros/jazzy/setup.bash
-source /home/bedo/mctr911_kinematics_venv/bin/activate
-source /tmp/rpc4-install/local_setup.bash
+source $HOME/mctr911_kinematics_venv/bin/activate
+source /tmp/rpc3-install/local_setup.bash
 export ROS_DOMAIN_ID=87 ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 export LD_LIBRARY_PATH="/opt/mujoco/mujoco-3.2.0/lib:$LD_LIBRARY_PATH"
-export RPC3_SCENE="/home/bedo/mujoco_menagerie/franka_emika_panda/scene.xml"
+export RPC3_SCENE="$HOME/mujoco_menagerie/franka_emika_panda/scene.xml"
 export PYTHONPATH="$PWD/src/panda_kinematics:/usr/lib/python3/dist-packages:$PYTHONPATH"
 mkdir -p docs/rpc3/demo_runs
 ```
+
+## Assignment template
+
+The provided Python template calls `compute_dynamics(q, dq, ddq)` and `plan_trajectory(q_start, q_end, T, dt)`. The implementation keeps those signatures. The first returns the mass matrix and the bias vector, which depend on position and velocity. The controller uses the desired acceleration separately to form the feedforward torque. The second generates time, joint position, velocity, and acceleration samples for the quintic reference.
 
 ## Graphical run
 
