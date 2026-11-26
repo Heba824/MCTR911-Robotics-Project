@@ -4,7 +4,7 @@
 - [RPC 2](RPC%202/) implements the linear Jacobian, its time derivative, and a quintic trajectory for Team 1's pick-and-place motion. The [side-by-side instructions](RPC%202/RPC2_SIDE_BY_SIDE_README.txt) describe both command modes. The [comparison plot](RPC%202/rpc2_comparison_results/position_vs_velocity.svg) shows recorded tracking.
 - [RPC 3](RPC%203/) implements Panda dynamics, torque control, and joint and Cartesian fuzzy controllers. The [evaluation package](RPC%203/docs/rpc3/final_evaluation/README.md) contains the report, demo guide, figures, and data.
 
-Each challenge is a separate ROS 2 Jazzy workspace. Build from inside the challenge directory so that Colcon discovers only that challenge's packages. The launch files expect a Franka Panda scene at `~/mujoco_menagerie/franka_emika_panda/scene.xml`. The bridge CMake file uses MuJoCo 3.2.0 under `/opt/mujoco`.
+Each challenge is a separate ROS 2 Jazzy workspace. Build from inside the challenge directory so that Colcon discovers only that challenge's packages. The launch files use the [pinned MuJoCo Menagerie Panda model](https://github.com/google-deepmind/mujoco_menagerie/tree/71f066ad0be9cd271f7ed58c030243ef157af9f4/franka_emika_panda) and expect its scene at `~/mujoco_menagerie/franka_emika_panda/scene.xml`. The bridge CMake file uses MuJoCo 3.2.0 under `/opt/mujoco`.
 
 ```bash
 source /opt/ros/jazzy/setup.bash

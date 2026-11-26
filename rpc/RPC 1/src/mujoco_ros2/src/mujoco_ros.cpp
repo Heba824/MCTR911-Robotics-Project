@@ -26,7 +26,7 @@ MuJoCoROS::MuJoCoROS(const std::string &xmlLocation) : Node("mujoco_node")
     // Declare & get parameters for this node
     std::string jointStateTopicName   = this->declare_parameter<std::string>("joint_state_topic_name", "joint_state");
     std::string jointCommandTopicName = this->declare_parameter<std::string>("joint_command_topic_name", "joint_commands");
-    std::string controlMode           = this->declare_parameter<std::string>("control_mode", "TORQUE");
+    std::string controlMode           = this->declare_parameter<std::string>("control_mode", "POSITION");
     _simFrequency                     = this->declare_parameter<int>("simulation_frequency", 1000);
     int visualisationFrequency        = this->declare_parameter<int>("visualisation_frequency", 20);
 
