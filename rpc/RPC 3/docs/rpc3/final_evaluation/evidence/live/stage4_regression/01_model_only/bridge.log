@@ -1,0 +1,10 @@
+[INFO] [launch]: All log files can be found below /home/bedo/.ros/log/2026-11-24-21-19-03-668037-LAPTOP-9I3G8O9D-417590
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mujoco_node-1]: process started with pid [417607]
+[mujoco_node-1] [INFO] [1795547944.277054859] [rpc3.mujoco_node]: TORQUE ready at home, waiting for a valid command. Watchdog: 100 ms.
+[mujoco_node-1] [INFO] [1795547944.278992634] [rpc3.mujoco_node]: Bridge: 10 physics steps per ROS callback, nominal update 10 ms
+[mujoco_node-1] [INFO] [1795547944.883058527] [rpc3.mujoco_node]: First valid TORQUE packet received. Simulation active.
+[mujoco_node-1] [ERROR] [1795547953.369140641] [rpc3.mujoco_node]: TORQUE watchdog expired. Simulation paused until relaunch.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[mujoco_node-1] [INFO] [1795547953.582684024] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [mujoco_node-1]: process has finished cleanly [pid 417607]

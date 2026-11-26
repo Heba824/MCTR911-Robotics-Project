@@ -1,0 +1,2 @@
+elapsed_s,reference_s,phase,joint_max_rad,joint_rms_rad,source_csv
+5.498481106988038,4.0,terminal_hold,0.0007047663675180393,0.0004626872365018181,gui_cartesian_flc.csv

@@ -1,0 +1,30 @@
+{
+  "seed": 911,
+  "samples": 6000,
+  "contact_count_at_pose": 0,
+  "q_rad": [
+    -0.6842826289319808,
+    -0.17592195670972588,
+    2.182939222596852,
+    -0.41446763351608995,
+    2.0021585291576494,
+    2.3616989897070617,
+    2.7461569532304737
+  ],
+  "sigma": [
+    0.9298564077406268,
+    0.5367447060065949,
+    0.002301367637244041
+  ],
+  "damping": 0.0943293354850423,
+  "comparison_at_max_speed": {
+    "desired_speed_m_s": 0.08,
+    "undamped_joint_speed_norm_rad_s": 34.761938381910376,
+    "damped_joint_speed_norm_rad_s": 0.020678737210002605,
+    "bounded_joint_speed_norm_rad_s": 0.020678737210002605,
+    "undamped_task_residual_m_s": 3.134170564186769e-15,
+    "damped_task_residual_m_s": 0.07995241062340583,
+    "bounded_task_residual_m_s": 0.07995241062340583,
+    "joint_limit_activations": 0
+  }
+}

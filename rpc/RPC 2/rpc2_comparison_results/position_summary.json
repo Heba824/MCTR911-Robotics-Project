@@ -1,0 +1,83 @@
+{
+  "mode": "POSITION",
+  "cycles": 4,
+  "leg_duration_s": 2.0,
+  "endpoint_hold_s": 0.4,
+  "wall_duration_s": 20.55262892799874,
+  "number_of_joint_state_samples": 53,
+  "commands_sent": 412,
+  "reference_definition": "last published position target",
+  "checkpoint_errors": [
+    {
+      "cycle": 1,
+      "leg": "reach",
+      "t_wall_s": 2.4003,
+      "max_endpoint_error_rad": 0.26129743088411006,
+      "endpoint_joint_rmse_rad": 0.2024388143866166
+    },
+    {
+      "cycle": 1,
+      "leg": "return",
+      "t_wall_s": 4.8561,
+      "max_endpoint_error_rad": 0.05829307230895653,
+      "endpoint_joint_rmse_rad": 0.04767783025015088
+    },
+    {
+      "cycle": 2,
+      "leg": "reach",
+      "t_wall_s": 7.3002,
+      "max_endpoint_error_rad": 0.07994283221966669,
+      "endpoint_joint_rmse_rad": 0.05926701920273991
+    },
+    {
+      "cycle": 2,
+      "leg": "return",
+      "t_wall_s": 9.7502,
+      "max_endpoint_error_rad": 0.1340617505682966,
+      "endpoint_joint_rmse_rad": 0.0997525500894155
+    },
+    {
+      "cycle": 3,
+      "leg": "reach",
+      "t_wall_s": 12.2002,
+      "max_endpoint_error_rad": 0.16653298524379423,
+      "endpoint_joint_rmse_rad": 0.1035401153691106
+    },
+    {
+      "cycle": 3,
+      "leg": "return",
+      "t_wall_s": 14.6521,
+      "max_endpoint_error_rad": 0.12762611527885293,
+      "endpoint_joint_rmse_rad": 0.10019983966857432
+    },
+    {
+      "cycle": 4,
+      "leg": "reach",
+      "t_wall_s": 17.1002,
+      "max_endpoint_error_rad": 0.15272254644539385,
+      "endpoint_joint_rmse_rad": 0.096995004534274
+    },
+    {
+      "cycle": 4,
+      "leg": "return",
+      "t_wall_s": 19.5501,
+      "max_endpoint_error_rad": 0.12448704930566823,
+      "endpoint_joint_rmse_rad": 0.09940913381096918
+    }
+  ],
+  "motion_joint_rmse_rad": 0.09466659485446703,
+  "motion_max_joint_error_rad": 0.2590735481315818,
+  "motion_samples": 42,
+  "any_measured_joint_out_of_limits": false,
+  "final_home_max_joint_error_rad": 0.07094487194682042,
+  "final_home_joint_rmse_rad": 0.05911218179965648,
+  "final_measured_q_rad": [
+    0.04075534412694571,
+    0.05421960374236491,
+    -0.05239560925051902,
+    -1.5014601414334885,
+    0.062153656368696,
+    1.6417348719468203,
+    -0.726897896084213
+  ]
+}

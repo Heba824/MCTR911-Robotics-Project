@@ -1,0 +1,34 @@
+PASS: 102 FK poses match XML-derived transforms
+Max position discrepancy: 2.719e-16 m
+Max rotation discrepancy: 2.980e-08 rad
+Home-configuration hand pose:
+[[ 9.80000e-05  1.00000e+00  0.00000e+00  5.54499e-01]
+ [ 1.00000e+00 -9.80000e-05 -0.00000e+00 -0.00000e+00]
+ [-0.00000e+00  0.00000e+00 -1.00000e+00  6.24502e-01]
+ [ 0.00000e+00  0.00000e+00  0.00000e+00  1.00000e+00]]
+
+Next: run verify_ik.py and compare the pose with live MuJoCo.
+PASS: selected reachable target from home (0.416 mm, 0.00066 rad)
+PASS: selected target from zero seed (0.416 mm, 0.00066 rad)
+PASS: near-singularity target (0.639 mm, 0.00132 rad)
+PASS: 50 generated reachable poses from nearby seeds
+PASS: unreachable target rejected, returned vector in joint limits
+All numerical checks passed. Live MuJoCo pose verification is still required.
+PASS: 40 linear Jacobians match independent FK differences (max 1.62e-10)
+PASS: 40 acceleration checks pdd = J ddq + Jdot dq (max 1.11e-07)
+PASS: Jdot shape, finite values and zero-velocity test
+PASS: quintic trajectory shape (81,7), endpoints, and zero boundary velocities/accelerations
+PASS: joint limits, analytic derivatives and invalid-start rejection
+All RPC 2 mathematical checks passed. ROS/MuJoCo tracking not yet tested.
+PASS: Team 1 start/end inside all seven joint limits
+PASS: all seven joints move moderately; quintic never overshoots endpoint ranges
+PASS: 81 samples, zero endpoint velocities and accelerations
+Start q (rad): [ 0.       0.       0.      -1.57079  0.       1.57079 -0.7853 ]
+End   q (rad): [ 0.14  0.16 -0.18 -1.31  0.21  1.83 -0.59]
+Start hand XYZ (m): [ 0.5545 -0.      0.6245]
+End hand XYZ   (m): [0.6251 0.0034 0.6861]
+Hand displacement (m): [0.0706 0.0034 0.0616]
+Maximum |dq| (rad/s): 0.1222
+Maximum |ddq| (rad/s²): 0.0941
+Minimum margin per joint (rad): [2.7573 1.6028 2.7173 1.2402 2.6873 1.5883 2.112 ]
+Mathematical team test passed; check actual MuJoCo dynamics/collisions separately.
